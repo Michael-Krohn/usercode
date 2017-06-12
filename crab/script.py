@@ -33,45 +33,45 @@ if maxEvents<0:
     maxEvents = 1000000000
 print "crabFiles before: ",crabFiles
 print "crabSecondaryFiles before: ",crabSecondaryFiles
-#print "--------------- using edmFileUtil to convert PFN to LFN -------------------------"
-#sequence = range(0,len(crabFiles))
-#sequence.reverse()
-#for i in sequence :
-#     pfn=os.popen("edmFileUtil -d %s"%(crabFiles[i])).read() 
-#     pfn=re.sub("\n","",pfn)
-#     exit_code = launch("edmFileUtil "+pfn)
-#     if exit_code == 0 :
-#       print "Data is local"
-#       print crabFiles[i],"->",pfn
-#       crabFiles[i]=pfn
-#     else:
-#       print "Data is not local, using AAA/xrootd"
-#       crabFiles[i]="root://cms-xrd-global.cern.ch/"+crabFiles[i]
-#       print crabFiles[i],
-#       exit_code = launch("edmFileUtil "+crabFiles[i])
-#       if exit_code != 0:
-#            print "REMOVED"
-#            del crabFiles[i]
+print "--------------- using edmFileUtil to convert PFN to LFN -------------------------"
+sequence = range(0,len(crabFiles))
+sequence.reverse()
+for i in sequence :
+     pfn=os.popen("edmFileUtil -d %s"%(crabFiles[i])).read() 
+     pfn=re.sub("\n","",pfn)
+     exit_code = launch("edmFileUtil "+pfn)
+     if exit_code == 0 :
+       print "Data is local"
+       print crabFiles[i],"->",pfn
+       crabFiles[i]=pfn
+     else:
+       print "Data is not local, using AAA/xrootd"
+       crabFiles[i]="root://cms-xrd-global.cern.ch/"+crabFiles[i]
+       print crabFiles[i],
+       exit_code = launch("edmFileUtil "+crabFiles[i])
+       if exit_code != 0:
+            print "REMOVED"
+            del crabFiles[i]
 
 
-#sequence = range(0,len(crabSecondaryFiles))
-#sequence.reverse()
-#for i in sequence :
-#     pfn=os.popen("edmFileUtil -d %s"%(crabSecondaryFiles[i])).read() 
-#     pfn=re.sub("\n","",pfn)
-#     exit_code = launch("edmFileUtil "+pfn)
-#     if exit_code == 0 :
-#       print "Data is local"
-#       print crabSecondaryFiles[i],"->",pfn
-#       crabSecondaryFiles[i]=pfn
-#     else:
-#       print "Data is not local, using AAA/xrootd"
-#       crabSecondaryFiles[i]="root://cms-xrd-global.cern.ch/"+crabSecondaryFiles[i]
-#       print crabSecondaryFiles[i],
-#       exit_code = launch("edmFileUtil "+crabSecondaryFiles[i])
-#       if exit_code != 0:
-#            print "REMOVED"
-#            del crabSecondaryFiles[i]
+sequence = range(0,len(crabSecondaryFiles))
+sequence.reverse()
+for i in sequence :
+     pfn=os.popen("edmFileUtil -d %s"%(crabSecondaryFiles[i])).read() 
+     pfn=re.sub("\n","",pfn)
+     exit_code = launch("edmFileUtil "+pfn)
+     if exit_code == 0 :
+       print "Data is local"
+       print crabSecondaryFiles[i],"->",pfn
+       crabSecondaryFiles[i]=pfn
+     else:
+       print "Data is not local, using AAA/xrootd"
+       crabSecondaryFiles[i]="root://cms-xrd-global.cern.ch/"+crabSecondaryFiles[i]
+       print crabSecondaryFiles[i],
+       exit_code = launch("edmFileUtil "+crabSecondaryFiles[i])
+       if exit_code != 0:
+            print "REMOVED"
+            del crabSecondaryFiles[i]
 
 #for i in sequence :
 #     if os.getenv("GLIDECLIENT_Group","") != "overflow" :

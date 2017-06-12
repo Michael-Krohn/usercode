@@ -135,7 +135,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
     if preProcessing:
         from PhysicsTools.Heppy.utils.cmsswPreprocessor import CmsswPreprocessor
         from PhysicsTools.HeppyCore.framework.config import MCComponent
-        cmsRun_config = "hltDump2.py"
+        cmsRun_config = "hltForNtuples3_dump.py"
         preprocessor = CmsswPreprocessor(cmsRun_config)
         cfg = MCComponent("OutputHLT",filesInput, secondaryfiles=secondaryFiles)
         print "Run cmsswPreProcessing using:"
@@ -196,6 +196,10 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
     pfJets_source, pfJets_label               = Handle("vector<reco::PFJet>"), ("hltAK4PFJetsLooseIDCorrected")
     pfbtag_source, pfbtag_label             = Handle("edm::AssociationVector<edm::RefToBaseProd<reco::Jet>,vector<float>,edm::RefToBase<reco::Jet>,unsigned int,edm::helper::AssociationIdenticalKeyReference>"), ("hltCombinedSecondaryVertexBJetTagsPF")
 
+    AK8Jets_source, AK8Jets_label           = Handle("vector<reco::PFJet>"), ("ak8PFJetsCHS")
+    AK8GenJets_source, AK8GenJets_label     = Handle("vector<reco::GenJet>"), ("ak8GenJets")
+
+
     if Signal:
         genJets_source, genJets_label         = Handle("vector<reco::GenJet>"), ("ak4GenJetsNoNu")
         offJets_source, offJets_label         = Handle("vector<reco::PFJet>"), ("ak4PFJets")
@@ -210,7 +214,9 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         genParticles_source, genParticles_label             = Handle("vector<reco::GenParticle>"), ("genParticles")
     
     ### create output variables ###
-    
+
+    AK8GenJets   = BookVector(tree,"AK8GenJets",['pt','eta','phi','mass'])    
+    AK8Jets      = BookVector(tree,"AK8Jets",['pt','eta','phi','mass'])
     caloJets     = BookVector(tree,"caloJets",['pt','eta','phi','mass','matchOff','matchGen','puId','csv'])
     pfJets       = BookVector(tree,"pfJets",['pt','eta','phi','mass','matchOff','matchGen','neHadEF','neEmEF','chHadEF','chEmEF','muEF','mult','neMult','chMult','csv'])
     
@@ -278,6 +284,8 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         event.getByLabel(pfbtag_label, pfbtag_source)
         event.getByLabel(l1Jets_label, l1Jets_source)
         event.getByLabel(l1HT_label, l1HT_source)
+	event.getByLabel(AK8Jets_label, AK8Jets_source)
+        event.getByLabel(AK8GenJets_label, AK8GenJets_source)
         
         ####################################################
         
@@ -309,6 +317,8 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         FillVector(caloJets_source,caloJets)
         FillVector(pfJets_source,pfJets)
         FillVector(l1Jets_source,l1Jets)
+	FillVector(AK8Jets_source,AK8Jets)
+        FillVector(AK8GenJets_source,AK8GenJets)
         
         FillVector(caloMet_source,caloMet, 0)
         FillVector(caloMht_source,caloMht, 0)
@@ -319,6 +329,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         FillBtag(calobtag_source, caloJets, caloJets.csv)
         FillBtag(caloPUid_source, caloJets, caloJets.puId)
         FillBtag(pfbtag_source, pfJets, pfJets.csv)
+
         
         l1Met[0],l1Met_phi[0],l1Mht[0],l1Mht_phi[0],l1HT[0] = -1,-1,-1,-1,-1
         for et in l1HT_source.productWithCheck():
