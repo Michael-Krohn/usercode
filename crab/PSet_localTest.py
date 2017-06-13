@@ -30,7 +30,7 @@ process.source = cms.Source("PoolSource",
 
 
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring('root://eoscms.cern.ch//eos/cms/store/mc/PhaseIFall16DR/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_90X_upgrade2017_realistic_v6_C1-v2/130000/BE521173-FD10-E711-A3FE-02163E0176C2.root'),
+    fileNames = cms.untracked.vstring('root://cmsxrootd.fnal.gov//store/mc/PhaseIFall16DR/GluGluHToBB_M125_13TeV_powheg_pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/00000/081394F4-C11A-E711-B81D-A4BF0108B862.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 

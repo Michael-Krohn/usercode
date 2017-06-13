@@ -68,7 +68,7 @@ if __name__ == '__main__':
     config = config()
     
     for dataset in datasets:
-        name = 'HLT_Ntuple_Hbb_Signal_v8_AODSIM_AK8'
+        name = 'HLT_Ntuple_Hbb_Signal_v8_AODSIM_AK8_test'
         config.section_("General")
         config.General.workArea = 'crab_'+name
         config.General.transferLogs=True
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         os.system("tar czf python.tar.gz --dereference --directory $CMSSW_BASE python")
         os.system("voms-proxy-info -path | xargs -i  cp {}  .")
         config.JobType.inputFiles = [
-                                     'hltForNtuples3_dump.py',
+                                     'hltForNtuples4_dump.py',
                                      'fwlite_config.py',
                                      'script.py',
                                      'utils.py',
@@ -96,7 +96,8 @@ if __name__ == '__main__':
         config.section_("Data")
         config.Data.inputDBS = 'global'
         config.Data.splitting = 'FileBased'
-        config.Data.unitsPerJob = 10 ##FIXME: use 20
+        config.Data.unitsPerJob = 1 ##FIXME: use 20
+#        config.Data.unitsPerJob = 10 ##FIXME: use 20
 
 #        config.Data.totalUnits = -1
 #        config.Data.totalUnits = 10*config.Data.unitsPerJob
@@ -104,7 +105,8 @@ if __name__ == '__main__':
 
 #        config.Data.totalUnits = 100*config.Data.unitsPerJob ##FIXME: use -1
 #        config.Data.unitsPerJob = 1 #FIXME: use 20
-        config.Data.totalUnits = -1 #10*config.Data.unitsPerJob #FIXME: use -1
+        config.Data.totalUnits = 1 #10*config.Data.unitsPerJob #FIXME: use -1
+#        config.Data.totalUnits = -1 #10*config.Data.unitsPerJob #FIXME: use -1
 #        config.Data.outLFNDirBase = '/store/user/sdonato/' + name
         config.Data.outLFNDirBase = '/store/user/mkrohn/' + name
         config.Data.publication = True

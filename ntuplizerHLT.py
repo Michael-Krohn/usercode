@@ -199,6 +199,8 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
     AK8Jets_source, AK8Jets_label           = Handle("vector<reco::PFJet>"), ("ak8PFJetsCHS")
     AK8GenJets_source, AK8GenJets_label     = Handle("vector<reco::GenJet>"), ("ak8GenJets")
 
+    AK8SoftDrop_source, AK8SoftDrop_label   = Handle("edm::ValueMap<float>"), ("ak8PFJetsCHSSoftDropMass")
+
 
     if Signal:
         genJets_source, genJets_label         = Handle("vector<reco::GenJet>"), ("ak4GenJetsNoNu")
@@ -217,6 +219,12 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
 
     AK8GenJets   = BookVector(tree,"AK8GenJets",['pt','eta','phi','mass'])    
     AK8Jets      = BookVector(tree,"AK8Jets",['pt','eta','phi','mass'])
+
+    AK8SoftDrop  = SetVariable(tree,'AK8SoftDropMass')
+#    AK8SoftDrop  = BookVector(tree,'AK8SoftDropMass',['mass'])
+#    vector<float> AK8SoftDrop
+
+
     caloJets     = BookVector(tree,"caloJets",['pt','eta','phi','mass','matchOff','matchGen','puId','csv'])
     pfJets       = BookVector(tree,"pfJets",['pt','eta','phi','mass','matchOff','matchGen','neHadEF','neEmEF','chHadEF','chEmEF','muEF','mult','neMult','chMult','csv'])
     
@@ -250,6 +258,8 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
     pu          = SetVariable(tree,'pu')
     ptHat       = SetVariable(tree,'ptHat')
     maxPUptHat  = SetVariable(tree,'maxPUptHat')
+
+#    tree->Branch("AK8SoftDrop", &AK8SoftDrop)
     
     f.cd()
     
@@ -286,13 +296,14 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         event.getByLabel(l1HT_label, l1HT_source)
 	event.getByLabel(AK8Jets_label, AK8Jets_source)
         event.getByLabel(AK8GenJets_label, AK8GenJets_source)
-        
+        event.getByLabel(AK8SoftDrop_label, AK8SoftDrop_source)
+
         ####################################################
-        
 
         run[0]          = event.eventAuxiliary().run()
         lumi[0]         = event.eventAuxiliary().luminosityBlock()
         evt[0]          = event.eventAuxiliary().event()
+#	AK8SoftDrop[0]  = AK8SoftDrop_source
         
         if Signal:
             event.getByLabel(offMet_label, offMet_source)
@@ -449,7 +460,24 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
 #                print "acc:",triggerBits.product().accept(index)
             else:
                 triggerVars[triggerName][0] = 0
-        
+
+        njet = 0
+        for jet in range(AK8Jets.num[0]):
+#	for jet in AK8Jets_source.productWithCheck():
+#	        print "jetHandle"
+#	        print AK8Jets_source->ptrAt(jet)
+#		jetptr = AK8Jets_source.ptrAt(jet)
+
+#                AK8SoftDrop[njet] = jet.userFloat("ak8PFJetsCHSSoftDropMass")
+#	        AK8SoftDrop[jet] = (AK8SoftDrop_source)[jetptr]
+		print "test AK8SDM"
+                print AK8SoftDrop_source.product().get(njet)
+                AK8SoftDrop[jet] = AK8SoftDrop_source.product().get(njet)
+
+		njet += 1
+
+
+
         if iev%10==1: print "Event: ",iev," done."
         tree.Fill()
 

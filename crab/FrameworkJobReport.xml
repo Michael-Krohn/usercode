@@ -1,0 +1,36 @@
+<FrameworkJobReport>
+<ReadBranches>
+</ReadBranches>
+<PerformanceReport>
+  <PerformanceSummary Metric="StorageStatistics">
+    <Metric Name="Parameter-untracked-bool-enabled" Value="true"/>
+    <Metric Name="Parameter-untracked-bool-stats" Value="true"/>
+    <Metric Name="Parameter-untracked-string-cacheHint" Value="application-only"/>
+    <Metric Name="Parameter-untracked-string-readHint" Value="auto-detect"/>
+    <Metric Name="ROOT-tfile-read-totalMegabytes" Value="0"/>
+    <Metric Name="ROOT-tfile-write-totalMegabytes" Value="0"/>
+  </PerformanceSummary>
+</PerformanceReport>
+<GeneratorInfo>
+</GeneratorInfo>
+<InputFile>
+<LFN>root://cmsxrootd.fnal.gov//store/mc/PhaseIFall16DR/GluGluHToBB_M125_13TeV_powheg_pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/00000/081394F4-C11A-E711-B81D-A4BF0108B862.root</LFN>
+<PFN></PFN>
+<Catalog></Catalog>
+<InputType>primaryFiles</InputType>
+<ModuleLabel>source</ModuleLabel>
+<GUID></GUID>
+<InputSourceClass>PoolSource</InputSourceClass>
+<EventsRead>1</EventsRead>
+</InputFile>
+<File>
+<LFN></LFN>
+<PFN>tree.root</PFN>
+<Catalog></Catalog>
+<ModuleLabel>HEPPY</ModuleLabel>
+<GUID></GUID>
+<OutputModuleClass>PoolOutputModule</OutputModuleClass>
+<TotalEvents>100</TotalEvents>
+<BranchHash>dc90308e392b2fa1e0eff46acbfa24bc</BranchHash>
+</File>
+</FrameworkJobReport>

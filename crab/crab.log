@@ -1,0 +1,32 @@
+DEBUG 2017-06-13 10:25:41,235: 	 Executing command: 'status'
+DEBUG 2017-06-13 10:25:41,236: 	 Found CRAB cache file /uscms/home/mkrohn/.crab3
+DEBUG 2017-06-13 10:25:41,260: 	 Checking credentials
+DEBUG 2017-06-13 10:25:41,260: 	 Found proxy file /tmp/x509up_u47835
+DEBUG 2017-06-13 10:25:41,260: 	 Getting proxy life time left
+DEBUG 2017-06-13 10:25:41,463: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47835 -timeleft
+ output : 42187
+
+ error: 
+ retcode : 0
+DEBUG 2017-06-13 10:25:41,666: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47835 -actimeleft
+ output : 42187
+
+ error: 
+ retcode : 0
+DEBUG 2017-06-13 10:25:41,666: 	 Proxy valid for 11:43:07 hours
+ERROR 2017-06-13 10:25:41,667: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/mkrohn/DAZSLE/HLT_Heppy_MichaelsFork/CMSSW_9_0_0/src/HLTNtuples/crab/crab_HLT_Ntuple_Hbb_Signal_v8_AODSIM_AK8_test
+ERROR 2017-06-13 10:25:41,667: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1705.patch6/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1705.patch6/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1705.patch6/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 37, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1705.patch6/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1705.patch6/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/mkrohn/DAZSLE/HLT_Heppy_MichaelsFork/CMSSW_9_0_0/src/HLTNtuples/crab/crab_HLT_Ntuple_Hbb_Signal_v8_AODSIM_AK8_test
