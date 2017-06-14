@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 process = cms.Process("TEST")
 
 process.source = cms.Source("PoolSource",
-    fileNames = cms.untracked.vstring('file:./cmsswPreProcessing.root'),
+    fileNames = cms.untracked.vstring(),
     inputCommands = cms.untracked.vstring('keep *'),
     secondaryFileNames = cms.untracked.vstring(),
     skipEvents = cms.untracked.uint32(0)
@@ -9009,6 +9009,49 @@ process.simBmtfDigis = cms.EDProducer("L1TMuonBarrelTrackProducer",
 )
 
 
+process.simBscDigis = cms.EDProducer("BSCTrigger",
+    bitNames = cms.vstring('L1Tech_BSC_minBias_inner_threshold1', 
+        'L1Tech_BSC_minBias_inner_threshold2', 
+        'L1Tech_BSC_minBias_OR', 
+        'L1Tech_BSC_HighMultiplicity', 
+        'L1Tech_BSC_halo_beam2_inner', 
+        'L1Tech_BSC_halo_beam2_outer', 
+        'L1Tech_BSC_halo_beam1_inner', 
+        'L1Tech_BSC_halo_beam1_outer', 
+        'L1Tech_BSC_minBias_threshold1', 
+        'L1Tech_BSC_minBias_threshold2', 
+        'L1Tech_BSC_splash_beam1', 
+        'L1Tech_BSC_splash_beam2'),
+    bitNumbers = cms.vuint32(32, 33, 34, 35, 36, 
+        37, 38, 39, 40, 41, 
+        42, 43),
+    coincidence = cms.double(72.85),
+    resolution = cms.double(3.0),
+    theHits = cms.InputTag("mix","g4SimHitsBSCHits")
+)
+
+
+process.simCaloStage2BitwiseDigis = cms.EDProducer("L1TStage2Layer2Producer",
+    firmware = cms.int32(1),
+    towerToken = cms.InputTag("simCaloStage2BitwiseLayer1Digis")
+)
+
+
+process.simCaloStage2BitwiseLayer1Digis = cms.EDProducer("L1TCaloLayer1",
+    ecalToken = cms.InputTag("ecalDigis","EcalTriggerPrimitives"),
+    firmwareVersion = cms.int32(1),
+    hcalToken = cms.InputTag("simHcalTriggerPrimitiveDigis"),
+    unpackEcalMask = cms.bool(False),
+    unpackHcalMask = cms.bool(False),
+    useCalib = cms.bool(True),
+    useECALLUT = cms.bool(True),
+    useHCALLUT = cms.bool(True),
+    useHFLUT = cms.bool(True),
+    useLSB = cms.bool(True),
+    verbose = cms.bool(False)
+)
+
+
 process.simCaloStage2Digis = cms.EDProducer("L1TStage2Layer2Producer",
     firmware = cms.int32(1),
     towerToken = cms.InputTag("simCaloStage2Layer1Digis")
@@ -9261,6 +9304,15 @@ process.simGtStage2Digis = cms.EDProducer("L1TGlobalProducer",
 )
 
 
+process.simHcalTechTrigDigis = cms.EDProducer("HcalTTPTriggerRecord",
+    ttpBitNames = cms.vstring('L1Tech_HCAL_HF_MM_or_PP_or_PM.v0', 
+        'L1Tech_HCAL_HF_coincidence_PM.v1', 
+        'L1Tech_HCAL_HF_MMP_or_MPP.v0'),
+    ttpBits = cms.vuint32(8, 9, 10),
+    ttpDigiCollection = cms.InputTag("simHcalTTPDigis")
+)
+
+
 process.simHcalTriggerPrimitiveDigis = cms.EDProducer("HcalTrigPrimDigiProducer",
     FG_HF_threshold = cms.uint32(17),
     FG_threshold = cms.uint32(12),
@@ -9297,6 +9349,14 @@ process.simHcalTriggerPrimitiveDigis = cms.EDProducer("HcalTrigPrimDigiProducer"
 )
 
 
+process.simMuonQualityAdjusterDigis = cms.EDProducer("L1TMuonQualityAdjuster",
+    bmtfBxOffset = cms.int32(0),
+    bmtfInput = cms.InputTag("simBmtfDigis","BMTF"),
+    emtfInput = cms.InputTag("simEmtfDigis","EMTF"),
+    omtfInput = cms.InputTag("simOmtfDigis","OMTF")
+)
+
+
 process.simOmtfDigis = cms.EDProducer("L1TMuonOverlapTrackProducer",
     XMLDumpFileName = cms.string('TestEvents.xml'),
     dropCSCPrimitives = cms.bool(False),
@@ -9311,6 +9371,25 @@ process.simOmtfDigis = cms.EDProducer("L1TMuonOverlapTrackProducer",
     srcDTPh = cms.InputTag("simDtTriggerPrimitiveDigis"),
     srcDTTh = cms.InputTag("simDtTriggerPrimitiveDigis"),
     srcRPC = cms.InputTag("unpackRPC")
+)
+
+
+process.simRpcTechTrigDigis = cms.EDProducer("RPCTechnicalTrigger",
+    BitNames = cms.vstring('L1Tech_RPC_TTU_barrel_Cosmics/v0', 
+        'L1Tech_RPC_TTU_pointing_Cosmics/v0', 
+        'L1Tech_RPC_TTU_RBplus2_Cosmics/v0', 
+        'L1Tech_RPC_TTU_RBplus1_Cosmics/v0', 
+        'L1Tech_RPC_TTU_RB0_Cosmics/v0', 
+        'L1Tech_RPC_TTU_RBminus1_Cosmics/v0', 
+        'L1Tech_RPC_TTU_RBminus2_Cosmics/v0'),
+    BitNumbers = cms.vuint32(24, 25, 26, 27, 28, 
+        29, 30),
+    ConfigFile = cms.string('hardware-pseudoconfig.txt'),
+    RPCDigiLabel = cms.InputTag("muonRPCDigis"),
+    RPCSimLinkInstance = cms.InputTag("RPCDigiSimLink"),
+    UseEventSetup = cms.untracked.int32(0),
+    UseRPCSimLink = cms.untracked.int32(0),
+    Verbosity = cms.untracked.int32(0)
 )
 
 
@@ -10548,25 +10627,10 @@ process.dqmOutput = cms.OutputModule("DQMRootOutputModule",
 )
 
 
-process.HLTHBHENoiseCleanerSequence = cms.Sequence(process.hltHcalNoiseInfoProducer+process.hltHcalTowerNoiseCleanerWithrechit)
-
-
 process.HLTDoLocalPixelSequence = cms.Sequence(process.hltSiPixelDigis+process.hltSiPixelClusters+process.hltSiPixelClustersCache+process.hltSiPixelRecHits)
 
 
-process.HLTAK8CaloCorrectorProducersSequence = cms.Sequence(process.hltAK8CaloFastJetCorrector+process.hltAK8CaloRelativeCorrector+process.hltAK8CaloAbsoluteCorrector+process.hltAK8CaloResidualCorrector+process.hltAK8CaloCorrector)
-
-
-process.HLTPreshowerSequence = cms.Sequence(process.hltEcalPreshowerDigis+process.hltEcalPreshowerRecHit)
-
-
 process.HLTFastRecopixelvertexingSequence = cms.Sequence(process.hltSelector4CentralJetsL1FastJet+process.hltFastPrimaryVertex+process.hltFastPVPixelVertexFilter+process.hltFastPVPixelTracksFilter+process.hltFastPVPixelTracksFitter+process.hltFastPVPixelTracksTrackingRegions+process.hltFastPVPixelTracksHitDoublets+process.hltFastPVPixelTracksHitQuadruplets+process.hltFastPVPixelTracks+process.hltFastPVJetTracksAssociator+process.hltFastPVJetVertexChecker+process.hltFastPVPixelTracksRecoverFilter+process.hltFastPVPixelTracksRecoverFitter+process.hltFastPVPixelTracksTrackingRegionsRecover+process.hltFastPVPixelTracksHitDoubletsRecover+process.hltFastPVPixelTracksHitQuadrupletsRecover+process.hltFastPVPixelTracksRecover+process.hltFastPVPixelTracksMerger+process.hltFastPVPixelVertices+process.hltFastPVPixelVerticesFilter)
-
-
-process.HLTDoLocalPixelSequenceRegForBTag = cms.Sequence(process.hltSelectorJets20L1FastJet+process.hltSelectorCentralJets20L1FastJeta+process.hltSiPixelDigisRegForBTag+process.hltSiPixelClustersRegForBTag+process.hltSiPixelClustersRegForBTagCache+process.hltSiPixelRecHitsRegForBTag+process.hltPixelLayerQuadrupletsRegForBTag)
-
-
-process.HLTParticleFlowSequence = cms.Sequence(process.HLTPreshowerSequence+process.hltParticleFlowRecHitECALUnseeded+process.hltParticleFlowRecHitHBHE+process.hltParticleFlowRecHitHCAL+process.hltParticleFlowRecHitHF+process.hltParticleFlowRecHitPSUnseeded+process.hltParticleFlowClusterECALUncorrectedUnseeded+process.hltParticleFlowClusterPSUnseeded+process.hltParticleFlowClusterECALUnseeded+process.hltParticleFlowClusterHBHE+process.hltParticleFlowClusterHCAL+process.hltParticleFlowClusterHF+process.hltLightPFTracks+process.hltParticleFlowBlock+process.hltParticleFlow)
 
 
 process.HLTRecoPixelTracksSequence = cms.Sequence(process.hltPixelTracksFilter+process.hltPixelTracksFitter+process.hltPixelTracksTrackingRegions+process.hltPixelLayerQuadruplets+process.hltPixelTracksHitDoublets+process.hltPixelTracksHitQuadruplets+process.hltPixelTracks)
@@ -10578,34 +10642,70 @@ process.HLTL1UnpackerSequence = cms.Sequence(process.hltGtStage2Digis+process.hl
 process.HLTMuonLocalRecoSequence = cms.Sequence(process.hltMuonDTDigis+process.hltDt1DRecHits+process.hltDt4DSegments+process.hltMuonCSCDigis+process.hltCsc2DRecHits+process.hltCscSegments+process.hltMuonRPCDigis+process.hltRpcRecHits)
 
 
-process.HLTIterativeTrackingIteration0ForBTag = cms.Sequence(process.hltIter0PFLowPixelSeedsFromPixelTracksForBTag+process.hltIter0PFlowCkfTrackCandidatesForBTag+process.hltIter0PFlowCtfWithMaterialTracksForBTag+process.hltIter0PFlowTrackCutClassifierForBTag+process.hltIter0PFlowTrackSelectionHighPurityForBTag)
-
-
 process.HLTDoLocalHcalSequence = cms.Sequence(process.hltHcalDigis+process.hltHbhePhase1Reco+process.hltHbhereco+process.hltHfprereco+process.hltHfreco+process.hltHoreco)
-
-
-process.HLTIter0TrackAndTauJet4Iter1Sequence = cms.Sequence(process.hltTrackIter0RefsForJets4Iter1+process.hltAK4Iter0TrackJets4Iter1+process.hltIter0TrackAndTauJets4Iter1)
-
-
-process.HLTNoPUSequence = cms.Sequence(process.HLTDoLocalPixelSequenceRegForBTag+process.HLTFastRecopixelvertexingSequence+process.hltPixelTracksForNoPUFilter+process.hltSelectorJets20L1FastJetForNoPU+process.hltPixelTracksForNoPUFitter+process.hltPixelTracksTrackingRegionsForNoPU+process.hltPixelTracksHitDoubletsForNoPU+process.hltPixelTracksHitQuadrupletsForNoPU+process.hltPixelTracksForNoPU+process.hltCaloJetFromPV)
-
-
-process.HLTBeamSpot = cms.Sequence(process.hltScalersRawToDigi+process.hltOnlineBeamSpot)
 
 
 process.HLTL2muonrecoNocandSequence = cms.Sequence(process.HLTMuonLocalRecoSequence+process.hltL2OfflineMuonSeeds+process.hltL2MuonSeeds+process.hltL2Muons)
 
 
-process.HLTDoLocalStripSequenceRegForBTag = cms.Sequence(process.hltSiStripExcludedFEDListProducer+process.hltSiStripRawToClustersFacility+process.hltSiStripClustersRegForBTag)
-
-
-process.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(process.hltEcalDigis+process.hltEcalUncalibRecHit+process.hltEcalDetIdToBeRecovered+process.hltEcalRecHit)
-
-
 process.HLTAK4CaloCorrectorProducersSequence = cms.Sequence(process.hltAK4CaloFastJetCorrector+process.hltAK4CaloRelativeCorrector+process.hltAK4CaloAbsoluteCorrector+process.hltAK4CaloResidualCorrector+process.hltAK4CaloCorrector)
 
 
-process.HLTAK8CaloJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFastjetAllCalo+process.HLTAK8CaloCorrectorProducersSequence+process.hltAK8CaloJetsCorrected+process.hltAK8CaloJetsCorrectedIDPassed)
+process.HLTBeamSpot = cms.Sequence(process.hltScalersRawToDigi+process.hltOnlineBeamSpot)
+
+
+process.HLTIterativeTrackingIteration2 = cms.Sequence(process.hltIter2ClustersRefRemoval+process.hltIter2MaskedMeasurementTrackerEvent+process.hltIter2PixelLayerTriplets+process.hltIter2PFlowPixelTrackingRegions+process.hltIter2PFlowPixelClusterCheck+process.hltIter2PFlowPixelHitDoublets+process.hltIter2PFlowPixelHitTriplets+process.hltIter2PFlowPixelSeeds+process.hltIter2PFlowCkfTrackCandidates+process.hltIter2PFlowCtfWithMaterialTracks+process.hltIter2PFlowTrackCutClassifier+process.hltIter2PFlowTrackSelectionHighPurity)
+
+
+process.HLTIterativeTrackingIteration1ForBTag = cms.Sequence(process.hltIter1ClustersRefRemovalForBTag+process.hltIter1MaskedMeasurementTrackerEventForBTag+process.hltIter1PixelLayerQuadrupletsForBTag+process.hltIter1PFlowPixelTrackingRegionsForBTag+process.hltIter1PFlowPixelClusterCheckForBTag+process.hltIter1PFlowPixelHitDoubletsForBTag+process.hltIter1PFlowPixelHitQuadrupletsForBTag+process.hltIter1PFlowPixelSeedsForBTag+process.hltIter1PFlowCkfTrackCandidatesForBTag+process.hltIter1PFlowCtfWithMaterialTracksForBTag+process.hltIter1PFlowTrackCutClassifierPromptForBTag+process.hltIter1PFlowTrackCutClassifierDetachedForBTag+process.hltIter1PFlowTrackCutClassifierMergedForBTag+process.hltIter1PFlowTrackSelectionHighPurityForBTag)
+
+
+process.HLTDoLocalStripSequence = cms.Sequence(process.hltSiStripExcludedFEDListProducer+process.hltSiStripRawToClustersFacility+process.hltSiStripClusters)
+
+
+process.HLTRecopixelvertexingSequence = cms.Sequence(process.HLTRecoPixelTracksSequence+process.hltPixelVertices+process.hltTrimmedPixelVertices)
+
+
+process.SimL1TMuonCommon = cms.Sequence(process.simDtTriggerPrimitiveDigis+process.simCscTriggerPrimitiveDigis)
+
+
+process.HLTBtagCSVSequencePF = cms.Sequence(process.hltVerticesPF+process.hltVerticesPFSelector+process.hltVerticesPFFilter+process.hltPFJetForBtagSelector+process.hltPFJetForBtag+process.hltBLifetimeAssociatorPF+process.hltBLifetimeTagInfosPF+process.hltInclusiveVertexFinderPF+process.hltInclusiveSecondaryVerticesPF+process.hltTrackVertexArbitratorPF+process.hltInclusiveMergedVerticesPF+process.hltSecondaryVertexTagInfosPF+process.hltCombinedSecondaryVertexBJetTagsPF)
+
+
+process.HLTBeginSequence = cms.Sequence(process.hltTriggerType+process.HLTL1UnpackerSequence+process.HLTBeamSpot)
+
+
+process.HLTHBHENoiseCleanerSequence = cms.Sequence(process.hltHcalNoiseInfoProducer+process.hltHcalTowerNoiseCleanerWithrechit)
+
+
+process.HLTPreshowerSequence = cms.Sequence(process.hltEcalPreshowerDigis+process.hltEcalPreshowerRecHit)
+
+
+process.SimL1TGlobal = cms.Sequence(process.simGtStage2Digis)
+
+
+process.HLTDoLocalPixelSequenceRegForBTag = cms.Sequence(process.hltSelectorJets20L1FastJet+process.hltSelectorCentralJets20L1FastJeta+process.hltSiPixelDigisRegForBTag+process.hltSiPixelClustersRegForBTag+process.hltSiPixelClustersRegForBTagCache+process.hltSiPixelRecHitsRegForBTag+process.hltPixelLayerQuadrupletsRegForBTag)
+
+
+process.HLTAK8CaloCorrectorProducersSequence = cms.Sequence(process.hltAK8CaloFastJetCorrector+process.hltAK8CaloRelativeCorrector+process.hltAK8CaloAbsoluteCorrector+process.hltAK8CaloResidualCorrector+process.hltAK8CaloCorrector)
+
+
+process.HLTL2muonrecoSequence = cms.Sequence(process.HLTL2muonrecoNocandSequence+process.hltL2MuonCandidates)
+
+
+process.HLTIter0TrackAndTauJet4Iter1Sequence = cms.Sequence(process.hltTrackIter0RefsForJets4Iter1+process.hltAK4Iter0TrackJets4Iter1+process.hltIter0TrackAndTauJets4Iter1)
+
+
+process.SimL1TCalorimeter = cms.Sequence(process.simCaloStage2Layer1Digis+process.simCaloStage2Digis+process.simCaloStage2BitwiseLayer1Digis+process.simCaloStage2BitwiseDigis)
+
+
+process.HLTIterativeTrackingIteration0ForBTag = cms.Sequence(process.hltIter0PFLowPixelSeedsFromPixelTracksForBTag+process.hltIter0PFlowCkfTrackCandidatesForBTag+process.hltIter0PFlowCtfWithMaterialTracksForBTag+process.hltIter0PFlowTrackCutClassifierForBTag+process.hltIter0PFlowTrackSelectionHighPurityForBTag)
+
+
+process.SimL1TMuon = cms.Sequence(process.SimL1TMuonCommon+process.simTwinMuxDigis+process.simBmtfDigis+process.simEmtfDigis+process.simOmtfDigis+process.simGmtCaloSumDigis+process.simMuonQualityAdjusterDigis+process.simGmtStage2Digis)
+
+
+process.HLTDoLocalStripSequenceRegForBTag = cms.Sequence(process.hltSiStripExcludedFEDListProducer+process.hltSiStripRawToClustersFacility+process.hltSiStripClustersRegForBTag)
 
 
 process.HLTIterativeTrackingIteration2ForBTag = cms.Sequence(process.hltIter2ClustersRefRemovalForBTag+process.hltIter2MaskedMeasurementTrackerEventForBTag+process.hltIter2PixelLayerTripletsForBTag+process.hltIter2PFlowPixelTrackingRegionsForBTag+process.hltIter2PFlowPixelClusterCheckForBTag+process.hltIter2PFlowPixelHitDoubletsForBTag+process.hltIter2PFlowPixelHitTripletsForBTag+process.hltIter2PFlowPixelSeedsForBTag+process.hltIter2PFlowCkfTrackCandidatesForBTag+process.hltIter2PFlowCtfWithMaterialTracksForBTag+process.hltIter2PFlowTrackCutClassifierForBTag+process.hltIter2PFlowTrackSelectionHighPurityForBTag)
@@ -10615,15 +10715,6 @@ process.HLTIter1TrackAndTauJets4Iter2Sequence = cms.Sequence(process.hltIter1Tra
 
 
 process.HLTEndSequence = cms.Sequence(process.hltBoolEnd)
-
-
-process.HLTIterativeTrackingIteration2 = cms.Sequence(process.hltIter2ClustersRefRemoval+process.hltIter2MaskedMeasurementTrackerEvent+process.hltIter2PixelLayerTriplets+process.hltIter2PFlowPixelTrackingRegions+process.hltIter2PFlowPixelClusterCheck+process.hltIter2PFlowPixelHitDoublets+process.hltIter2PFlowPixelHitTriplets+process.hltIter2PFlowPixelSeeds+process.hltIter2PFlowCkfTrackCandidates+process.hltIter2PFlowCtfWithMaterialTracks+process.hltIter2PFlowTrackCutClassifier+process.hltIter2PFlowTrackSelectionHighPurity)
-
-
-process.HLTBeginSequence = cms.Sequence(process.hltTriggerType+process.HLTL1UnpackerSequence+process.HLTBeamSpot)
-
-
-process.HLTIterativeTrackingIteration1ForBTag = cms.Sequence(process.hltIter1ClustersRefRemovalForBTag+process.hltIter1MaskedMeasurementTrackerEventForBTag+process.hltIter1PixelLayerQuadrupletsForBTag+process.hltIter1PFlowPixelTrackingRegionsForBTag+process.hltIter1PFlowPixelClusterCheckForBTag+process.hltIter1PFlowPixelHitDoubletsForBTag+process.hltIter1PFlowPixelHitQuadrupletsForBTag+process.hltIter1PFlowPixelSeedsForBTag+process.hltIter1PFlowCkfTrackCandidatesForBTag+process.hltIter1PFlowCtfWithMaterialTracksForBTag+process.hltIter1PFlowTrackCutClassifierPromptForBTag+process.hltIter1PFlowTrackCutClassifierDetachedForBTag+process.hltIter1PFlowTrackCutClassifierMergedForBTag+process.hltIter1PFlowTrackSelectionHighPurityForBTag)
 
 
 process.HLTAK4PFCorrectorProducersSequence = cms.Sequence(process.hltAK4PFFastJetCorrector+process.hltAK4PFRelativeCorrector+process.hltAK4PFAbsoluteCorrector+process.hltAK4PFResidualCorrector+process.hltAK4PFCorrector)
@@ -10638,40 +10729,28 @@ process.HLTIterativeTrackingIteration0 = cms.Sequence(process.hltIter0PFLowPixel
 process.HLTIterativeTrackingIter02 = cms.Sequence(process.HLTIterativeTrackingIteration0+process.HLTIter0TrackAndTauJet4Iter1Sequence+process.HLTIterativeTrackingIteration1+process.hltIter1Merged+process.HLTIter1TrackAndTauJets4Iter2Sequence+process.HLTIterativeTrackingIteration2+process.hltIter2Merged)
 
 
-process.HLTRecopixelvertexingSequence = cms.Sequence(process.HLTRecoPixelTracksSequence+process.hltPixelVertices+process.hltTrimmedPixelVertices)
+process.HLTNoPUSequence = cms.Sequence(process.HLTDoLocalPixelSequenceRegForBTag+process.HLTFastRecopixelvertexingSequence+process.hltPixelTracksForNoPUFilter+process.hltSelectorJets20L1FastJetForNoPU+process.hltPixelTracksForNoPUFitter+process.hltPixelTracksTrackingRegionsForNoPU+process.hltPixelTracksHitDoubletsForNoPU+process.hltPixelTracksHitQuadrupletsForNoPU+process.hltPixelTracksForNoPU+process.hltCaloJetFromPV)
 
 
-process.HLTBtagCSVSequencePF = cms.Sequence(process.hltVerticesPF+process.hltVerticesPFSelector+process.hltVerticesPFFilter+process.hltPFJetForBtagSelector+process.hltPFJetForBtag+process.hltBLifetimeAssociatorPF+process.hltBLifetimeTagInfosPF+process.hltInclusiveVertexFinderPF+process.hltInclusiveSecondaryVerticesPF+process.hltTrackVertexArbitratorPF+process.hltInclusiveMergedVerticesPF+process.hltSecondaryVertexTagInfosPF+process.hltCombinedSecondaryVertexBJetTagsPF)
+process.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(process.hltEcalDigis+process.hltEcalUncalibRecHit+process.hltEcalDetIdToBeRecovered+process.hltEcalRecHit)
 
 
-process.HLTDoLocalStripSequence = cms.Sequence(process.hltSiStripExcludedFEDListProducer+process.hltSiStripRawToClustersFacility+process.hltSiStripClusters)
-
-
-process.HLTDoCaloSequencePF = cms.Sequence(process.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence+process.HLTDoLocalHcalSequence+process.hltTowerMakerForPF)
-
-
-process.HLTIterativeTrackingIter02ForBTag = cms.Sequence(process.HLTIterativeTrackingIteration0ForBTag+process.HLTIterativeTrackingIteration1ForBTag+process.hltIter1MergedForBTag+process.HLTIterativeTrackingIteration2ForBTag+process.hltIter2MergedForBTag)
+process.SimL1TechnicalTriggers = cms.Sequence(process.simBscDigis+process.simRpcTechTrigDigis+process.simHcalTechTrigDigis)
 
 
 process.HLTAK8PFCorrectorProducersSequence = cms.Sequence(process.hltAK8PFFastJetCorrector+process.hltAK8PFRelativeCorrector+process.hltAK8PFAbsoluteCorrector+process.hltAK8PFResidualCorrector+process.hltAK8PFCorrector)
 
 
-process.HLTAK4CaloJetsPrePFRecoSequence = cms.Sequence(process.HLTDoCaloSequencePF+process.hltAK4CaloJetsPF)
-
-
 process.HLTTrackReconstructionForPF = cms.Sequence(process.HLTDoLocalPixelSequence+process.HLTRecopixelvertexingSequence+process.HLTDoLocalStripSequence+process.HLTIterativeTrackingIter02+process.hltPFMuonMerging+process.hltMuonLinks+process.hltMuons)
-
-
-process.HLTPreAK4PFJetsRecoSequence = cms.Sequence(process.HLTAK4CaloJetsPrePFRecoSequence+process.hltAK4CaloJetsPFEt5)
 
 
 process.HLTL3muonTkCandidateSequence = cms.Sequence(process.HLTDoLocalPixelSequence+process.HLTDoLocalStripSequence+process.hltL3TrajSeedOIState+process.hltL3TrackCandidateFromL2OIState+process.hltL3TkTracksFromL2OIState+process.hltL3MuonsOIState+process.hltL3TrajSeedOIHit+process.hltL3TrackCandidateFromL2OIHit+process.hltL3TkTracksFromL2OIHit+process.hltL3MuonsOIHit+process.hltL3TkFromL2OICombination+process.hltPixelLayerTriplets+process.hltPixelLayerPairs+process.hltMixedLayerPairs+process.hltL3TrajSeedIOHit+process.hltL3TrackCandidateFromL2IOHit+process.hltL3TkTracksFromL2IOHit+process.hltL3MuonsIOHit+process.hltL3TrajectorySeed+process.hltL3TrackCandidateFromL2)
 
 
-process.HLTAK8CaloJetsPrePFRecoSequence = cms.Sequence(process.HLTDoCaloSequencePF+process.hltAK8CaloJetsPF+process.hltAK4CaloJetsPF)
+process.HLTAK8CaloJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFastjetAllCalo+process.HLTAK8CaloCorrectorProducersSequence+process.hltAK8CaloJetsCorrected+process.hltAK8CaloJetsCorrectedIDPassed)
 
 
-process.HLTL2muonrecoSequence = cms.Sequence(process.HLTL2muonrecoNocandSequence+process.hltL2MuonCandidates)
+process.HLTParticleFlowSequence = cms.Sequence(process.HLTPreshowerSequence+process.hltParticleFlowRecHitECALUnseeded+process.hltParticleFlowRecHitHBHE+process.hltParticleFlowRecHitHCAL+process.hltParticleFlowRecHitHF+process.hltParticleFlowRecHitPSUnseeded+process.hltParticleFlowClusterECALUncorrectedUnseeded+process.hltParticleFlowClusterPSUnseeded+process.hltParticleFlowClusterECALUnseeded+process.hltParticleFlowClusterHBHE+process.hltParticleFlowClusterHCAL+process.hltParticleFlowClusterHF+process.hltLightPFTracks+process.hltParticleFlowBlock+process.hltParticleFlow)
 
 
 process.HLTAK4CaloJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFastjetAllCalo+process.HLTAK4CaloCorrectorProducersSequence+process.hltAK4CaloJetsCorrected+process.hltAK4CaloJetsCorrectedIDPassed)
@@ -10680,13 +10759,7 @@ process.HLTAK4CaloJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoF
 process.HLTAK8PFJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFastjetAll+process.HLTAK8PFCorrectorProducersSequence+process.hltAK8PFJetsCorrected+process.hltAK8PFJetsLooseIDCorrected+process.hltAK8PFJetsTightIDCorrected)
 
 
-process.HLTTrackReconstructionForBTag = cms.Sequence(process.HLTDoLocalPixelSequenceRegForBTag+process.HLTFastRecopixelvertexingSequence+process.HLTDoLocalStripSequenceRegForBTag+process.HLTIterativeTrackingIter02ForBTag)
-
-
 process.HLTDoCaloSequence = cms.Sequence(process.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence+process.HLTDoLocalHcalSequence+process.hltTowerMakerForAll)
-
-
-process.HLTPreAK8PFJetsRecoSequence = cms.Sequence(process.HLTAK8CaloJetsPrePFRecoSequence+process.hltAK8CaloJetsPFEt5+process.hltAK4CaloJetsPFEt5)
 
 
 process.HLTAK4PFJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFastjetAll+process.HLTAK4PFCorrectorProducersSequence+process.hltAK4PFJetsCorrected+process.hltAK4PFJetsLooseIDCorrected+process.hltAK4PFJetsTightIDCorrected)
@@ -10695,19 +10768,28 @@ process.HLTAK4PFJetsCorrectionSequence = cms.Sequence(process.hltFixedGridRhoFas
 process.HLTL3muonrecoNocandSequence = cms.Sequence(process.HLTL3muonTkCandidateSequence+process.hltL3TkTracksMergeStep1+process.hltL3TkTracksFromL2+process.hltL3MuonsLinksCombination+process.hltL3Muons)
 
 
+process.SimL1EmulatorCore = cms.Sequence(process.simCaloStage2Layer1Digis+process.simCaloStage2Digis+process.simCaloStage2BitwiseLayer1Digis+process.simCaloStage2BitwiseDigis+process.simDtTriggerPrimitiveDigis+process.simCscTriggerPrimitiveDigis+process.simTwinMuxDigis+process.simBmtfDigis+process.simEmtfDigis+process.simOmtfDigis+process.simGmtCaloSumDigis+process.simMuonQualityAdjusterDigis+process.simGmtStage2Digis+process.SimL1TechnicalTriggers+process.simGtStage2Digis)
+
+
+process.HLTDoCaloSequencePF = cms.Sequence(process.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence+process.HLTDoLocalHcalSequence+process.hltTowerMakerForPF)
+
+
+process.HLTIterativeTrackingIter02ForBTag = cms.Sequence(process.HLTIterativeTrackingIteration0ForBTag+process.HLTIterativeTrackingIteration1ForBTag+process.hltIter1MergedForBTag+process.HLTIterativeTrackingIteration2ForBTag+process.hltIter2MergedForBTag)
+
+
 process.HLTAK4CaloJetsReconstructionSequence = cms.Sequence(process.HLTDoCaloSequence+process.hltAK4CaloJets+process.hltAK4CaloJetsIDPassed)
+
+
+process.HLTAK4CaloJetsPrePFRecoSequence = cms.Sequence(process.HLTDoCaloSequencePF+process.hltAK4CaloJetsPF)
 
 
 process.HLTAK4CaloJetsSequence = cms.Sequence(process.HLTAK4CaloJetsReconstructionSequence+process.HLTAK4CaloJetsCorrectionSequence)
 
 
+process.HLTPreAK4PFJetsRecoSequence = cms.Sequence(process.HLTAK4CaloJetsPrePFRecoSequence+process.hltAK4CaloJetsPFEt5)
+
+
 process.HLTRecoMETSequence = cms.Sequence(process.HLTDoCaloSequence+process.hltMet)
-
-
-process.HLTBtagCSVSequenceL3 = cms.Sequence(process.hltSelectorJets30L1FastJet+process.hltSelectorCentralJets30L1FastJeta+process.hltSelector8CentralJetsL1FastJet+process.HLTTrackReconstructionForBTag+process.hltVerticesL3+process.hltFastPixelBLifetimeL3Associator+process.hltImpactParameterTagInfos+process.hltInclusiveVertexFinder+process.hltInclusiveSecondaryVertices+process.hltTrackVertexArbitrator+process.hltInclusiveMergedVertices+process.hltInclusiveSecondaryVertexFinderTagInfos+process.hltCombinedSecondaryVertexBJetTagsCalo)
-
-
-process.HLTCaloBTagScoutingSequence = cms.Sequence(process.HLTAK4CaloJetsSequence+process.HLTNoPUSequence+process.HLTBtagCSVSequenceL3)
 
 
 process.HLTAK8CaloJetsReconstructionSequence = cms.Sequence(process.HLTDoCaloSequence+process.hltAK8CaloJets+process.hltAK8CaloJetsIDPassed)
@@ -10716,16 +10798,28 @@ process.HLTAK8CaloJetsReconstructionSequence = cms.Sequence(process.HLTDoCaloSeq
 process.HLTL3muonrecoSequence = cms.Sequence(process.HLTL3muonrecoNocandSequence+process.hltL3MuonCandidates)
 
 
+process.HLTTrackReconstructionForBTag = cms.Sequence(process.HLTDoLocalPixelSequenceRegForBTag+process.HLTFastRecopixelvertexingSequence+process.HLTDoLocalStripSequenceRegForBTag+process.HLTIterativeTrackingIter02ForBTag)
+
+
+process.SimL1Emulator = cms.Sequence(process.unpackRPC+process.unpackDT+process.unpackCSC+process.unpackEcal+process.unpackHcal+process.simHcalTriggerPrimitiveDigis+process.SimL1EmulatorCore+process.packCaloStage2+process.packGmtStage2+process.packGtStage2+process.rawDataCollector)
+
+
+process.HLTAK8CaloJetsSequence = cms.Sequence(process.HLTAK8CaloJetsReconstructionSequence+process.HLTAK8CaloJetsCorrectionSequence)
+
+
+process.HLTAK8CaloJetsPrePFRecoSequence = cms.Sequence(process.HLTDoCaloSequencePF+process.hltAK8CaloJetsPF+process.hltAK4CaloJetsPF)
+
+
 process.HLTAK8PFJetsReconstructionSequence = cms.Sequence(process.HLTL2muonrecoSequence+process.HLTL3muonrecoSequence+process.HLTTrackReconstructionForPF+process.HLTParticleFlowSequence+process.hltAK8PFJets+process.hltAK8PFJetsLooseID+process.hltAK8PFJetsTightID)
 
 
 process.HLTCaloScoutingSequence = cms.Sequence(process.HLTAK4CaloJetsSequence+process.HLTRecoMETSequence+process.HLTHBHENoiseCleanerSequence+process.hltMetClean)
 
 
+process.HLTPreAK8PFJetsRecoSequence = cms.Sequence(process.HLTAK8CaloJetsPrePFRecoSequence+process.hltAK8CaloJetsPFEt5+process.hltAK4CaloJetsPFEt5)
+
+
 process.HLTAK8PFJetsSequence = cms.Sequence(process.HLTPreAK8PFJetsRecoSequence+process.HLTAK8PFJetsReconstructionSequence+process.HLTAK8PFJetsCorrectionSequence)
-
-
-process.HLTAK8CaloJetsSequence = cms.Sequence(process.HLTAK8CaloJetsReconstructionSequence+process.HLTAK8CaloJetsCorrectionSequence)
 
 
 process.HLTAK4PFJetsReconstructionSequence = cms.Sequence(process.HLTL2muonrecoSequence+process.HLTL3muonrecoSequence+process.HLTTrackReconstructionForPF+process.HLTParticleFlowSequence+process.hltAK4PFJets+process.hltAK4PFJetsLooseID+process.hltAK4PFJetsTightID)
@@ -10734,7 +10828,10 @@ process.HLTAK4PFJetsReconstructionSequence = cms.Sequence(process.HLTL2muonrecoS
 process.HLTAK4PFJetsSequence = cms.Sequence(process.HLTPreAK4PFJetsRecoSequence+process.HLTAK4PFJetsReconstructionSequence+process.HLTAK4PFJetsCorrectionSequence)
 
 
-process.SimL1Emulator = cms.Sequence(process.unpackRPC+process.unpackDT+process.unpackCSC+process.unpackEcal+process.unpackHcal+process.simHcalTriggerPrimitiveDigis+process.SimL1EmulatorCore+process.packCaloStage2+process.packGmtStage2+process.packGtStage2+process.rawDataCollector)
+process.HLTBtagCSVSequenceL3 = cms.Sequence(process.hltSelectorJets30L1FastJet+process.hltSelectorCentralJets30L1FastJeta+process.hltSelector8CentralJetsL1FastJet+process.HLTTrackReconstructionForBTag+process.hltVerticesL3+process.hltFastPixelBLifetimeL3Associator+process.hltImpactParameterTagInfos+process.hltInclusiveVertexFinder+process.hltInclusiveSecondaryVertices+process.hltTrackVertexArbitrator+process.hltInclusiveMergedVertices+process.hltInclusiveSecondaryVertexFinderTagInfos+process.hltCombinedSecondaryVertexBJetTagsCalo)
+
+
+process.HLTCaloBTagScoutingSequence = cms.Sequence(process.HLTAK4CaloJetsSequence+process.HLTNoPUSequence+process.HLTBtagCSVSequenceL3)
 
 
 process.HLTriggerFirstPath = cms.Path(process.SimL1Emulator+process.hltGetConditions+process.hltGetRaw+process.hltBoolFalse)

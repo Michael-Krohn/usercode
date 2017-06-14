@@ -1,11 +1,11 @@
 # /users/woodson/Hbb2017/V1 (CMSSW_9_0_0)
 
 import FWCore.ParameterSet.Config as cms
-
+####ADDED THIS####
 from L1Trigger.L1TCaloLayer1.simCaloStage2Layer1Digis_cfi import simCaloStage2Layer1Digis as simCaloStage2BitwiseLayer1Digis
 
 from L1Trigger.L1TCalorimeter.simCaloStage2Digis_cfi import simCaloStage2Digis as simCaloStage2BitwiseDigis
-
+####UNTIL HERE####
 
 process = cms.Process( "TEST" )
 
@@ -10769,7 +10769,21 @@ process.load('L1Trigger.L1TMuon.simMuonQualityAdjusterDigis_cfi')
 
 process.SimL1TMuon = cms.Sequence(process.SimL1TMuonCommon+process.simTwinMuxDigis+process.simBmtfDigis+process.simEmtfDigis+process.simOmtfDigis+process.simGmtCaloSumDigis+process.simMuonQualityAdjusterDigis+process.simGmtStage2Digis)
 
+import L1TriggerOffline.L1Analyzer.bscTrigger_cfi
+process.simBscDigis = L1TriggerOffline.L1Analyzer.bscTrigger_cfi.bscTrigger.clone()
+
+import L1Trigger.RPCTechnicalTrigger.rpcTechnicalTrigger_cfi
+process.simRpcTechTrigDigis = L1Trigger.RPCTechnicalTrigger.rpcTechnicalTrigger_cfi.rpcTechnicalTrigger.clone()
+
+import SimCalorimetry.HcalTrigPrimProducers.hcalTTPRecord_cfi
+process.simHcalTechTrigDigis = SimCalorimetry.HcalTrigPrimProducers.hcalTTPRecord_cfi.simHcalTTPRecord.clone()
+
+process.SimL1TechnicalTriggers = cms.Sequence(process.simBscDigis+process.simRpcTechTrigDigis+process.simHcalTechTrigDigis)
+
+process.SimL1TGlobal = cms.Sequence(process.simGtStage2Digis)
+
 process.SimL1EmulatorCore = cms.Sequence(process.SimL1TCalorimeter+process.SimL1TMuon+process.SimL1TechnicalTriggers+process.SimL1TGlobal)
+###UNTIL HERE####
 
 process.HLTIterativeTrackingIteration0 = cms.Sequence( process.hltIter0PFLowPixelSeedsFromPixelTracks + process.hltIter0PFlowCkfTrackCandidates + process.hltIter0PFlowCtfWithMaterialTracks + process.hltIter0PFlowTrackCutClassifier + process.hltIter0PFlowTrackSelectionHighPurity )
 process.HLTIter0TrackAndTauJet4Iter1Sequence = cms.Sequence( process.hltTrackIter0RefsForJets4Iter1 + process.hltAK4Iter0TrackJets4Iter1 + process.hltIter0TrackAndTauJets4Iter1 )

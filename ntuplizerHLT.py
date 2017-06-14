@@ -135,7 +135,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
     if preProcessing:
         from PhysicsTools.Heppy.utils.cmsswPreprocessor import CmsswPreprocessor
         from PhysicsTools.HeppyCore.framework.config import MCComponent
-        cmsRun_config = "hltForNtuples3_dump.py"
+        cmsRun_config = "hltForNtuples4_dump.py"
         preprocessor = CmsswPreprocessor(cmsRun_config)
         cfg = MCComponent("OutputHLT",filesInput, secondaryfiles=secondaryFiles)
         print "Run cmsswPreProcessing using:"
@@ -471,7 +471,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
 #                AK8SoftDrop[njet] = jet.userFloat("ak8PFJetsCHSSoftDropMass")
 #	        AK8SoftDrop[jet] = (AK8SoftDrop_source)[jetptr]
 		print "test AK8SDM"
-                print AK8SoftDrop_source.product().get(njet)
+                print AK8SoftDrop_source.productWithCheck().get(njet)
                 AK8SoftDrop[jet] = AK8SoftDrop_source.product().get(njet)
 
 		njet += 1
