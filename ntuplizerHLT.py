@@ -461,7 +461,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
             else:
                 triggerVars[triggerName][0] = 0
 
-        njet = 0
+#        njet = 0
 #        for jet in range(AK8Jets.num[0]):
 #	for jet in AK8Jets_source.productWithCheck():
 #	        print "jetHandle"
@@ -477,7 +477,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
 #                print AK8SoftDrop_source.productWithCheck().get(njet)
 #                AK8SoftDrop[jet] = AK8SoftDrop_source.product().get(njet)
 
-		njet += 1
+#		njet += 1
 
 
 
