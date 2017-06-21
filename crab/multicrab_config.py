@@ -86,7 +86,7 @@ if __name__ == '__main__':
         os.system("tar czf python.tar.gz --dereference --directory $CMSSW_BASE python")
         os.system("voms-proxy-info -path | xargs -i  cp {}  .")
         config.JobType.inputFiles = [
-                                     'hltForNtuples4_dump.py',
+                                     'hltForNtuples3_dump.py',
                                      'fwlite_config.py',
                                      'script.py',
                                      'utils.py',

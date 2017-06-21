@@ -1,6 +1,1590 @@
-%MSG-i ThreadSetup:  (NoModuleName) 21-Jun-2017 10:59:16 CDT pre-events
+%MSG-i ThreadSetup:  (NoModuleName) 21-Jun-2017 11:07:32 CDT pre-events
 setting # threads 4
 %MSG
-%MSG-i StreamSetup:  (NoModuleName) 21-Jun-2017 10:59:16 CDT pre-events
+%MSG-i StreamSetup:  (NoModuleName) 21-Jun-2017 11:07:32 CDT pre-events
 setting # streams 4
 %MSG
+DQMStore: MultiThread option is enabled
+21-Jun-2017 11:09:01 CDT  Initiating request to open file root://cmsxrootd.fnal.gov//store/mc/PhaseIFall16DR/GluGluHToBB_M125_13TeV_powheg_pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/00000/081394F4-C11A-E711-B81D-A4BF0108B862.root
+%MSG-w XrdAdaptor:  file_open 21-Jun-2017 11:09:04 CDT pre-events
+Data is served from T2_US_Nebraska instead of original site T1_US_FNAL
+%MSG
+21-Jun-2017 11:09:05 CDT  Successfully opened file root://cmsxrootd.fnal.gov//store/mc/PhaseIFall16DR/GluGluHToBB_M125_13TeV_powheg_pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/00000/081394F4-C11A-E711-B81D-A4BF0108B862.root
+Begin processing the 1st record. Run 1, Event 36634, LumiSection 111 at 21-Jun-2017 11:10:59.324 CDT
+Begin processing the 2nd record. Run 1, Event 36632, LumiSection 111 at 21-Jun-2017 11:10:59.325 CDT
+Begin processing the 3rd record. Run 1, Event 36633, LumiSection 111 at 21-Jun-2017 11:10:59.325 CDT
+Begin processing the 4th record. Run 1, Event 36631, LumiSection 111 at 21-Jun-2017 11:10:59.326 CDT
+Begin processing the 5th record. Run 1, Event 36636, LumiSection 111 at 21-Jun-2017 11:11:02.205 CDT
+Begin processing the 6th record. Run 1, Event 36638, LumiSection 111 at 21-Jun-2017 11:11:02.986 CDT
+Begin processing the 7th record. Run 1, Event 36640, LumiSection 111 at 21-Jun-2017 11:11:02.986 CDT
+Begin processing the 8th record. Run 1, Event 36637, LumiSection 111 at 21-Jun-2017 11:11:02.987 CDT
+%MSG-e TooManyClusters:  SiPixelClusterProducer:hltSiPixelClusters  21-Jun-2017 11:11:03 CDT Run: 1 Event: 36636
+Limit on the number of clusters exceeded. An empty cluster collection will be produced instead.
+
+%MSG
+Begin processing the 9th record. Run 1, Event 36642, LumiSection 111 at 21-Jun-2017 11:11:04.575 CDT
+Begin processing the 10th record. Run 1, Event 36635, LumiSection 111 at 21-Jun-2017 11:11:05.257 CDT
+Begin processing the 11th record. Run 1, Event 36643, LumiSection 111 at 21-Jun-2017 11:11:05.408 CDT
+Begin processing the 12th record. Run 1, Event 36639, LumiSection 111 at 21-Jun-2017 11:11:05.825 CDT
+Begin processing the 13th record. Run 1, Event 36644, LumiSection 111 at 21-Jun-2017 11:11:07.336 CDT
+Begin processing the 14th record. Run 1, Event 36646, LumiSection 111 at 21-Jun-2017 11:11:08.420 CDT
+Begin processing the 15th record. Run 1, Event 36648, LumiSection 111 at 21-Jun-2017 11:11:08.545 CDT
+Begin processing the 16th record. Run 1, Event 36641, LumiSection 111 at 21-Jun-2017 11:11:09.638 CDT
+Begin processing the 17th record. Run 1, Event 36647, LumiSection 111 at 21-Jun-2017 11:11:09.951 CDT
+Begin processing the 18th record. Run 1, Event 36649, LumiSection 111 at 21-Jun-2017 11:11:09.951 CDT
+Begin processing the 19th record. Run 1, Event 36645, LumiSection 111 at 21-Jun-2017 11:11:10.401 CDT
+Begin processing the 20th record. Run 1, Event 36651, LumiSection 111 at 21-Jun-2017 11:11:12.097 CDT
+Begin processing the 21st record. Run 1, Event 36653, LumiSection 111 at 21-Jun-2017 11:11:12.189 CDT
+%MSG-e TooManyClusters:  SiPixelClusterProducer:hltSiPixelClusters  21-Jun-2017 11:11:12 CDT Run: 1 Event: 36651
+Limit on the number of clusters exceeded. An empty cluster collection will be produced instead.
+
+%MSG
+Begin processing the 22nd record. Run 1, Event 36652, LumiSection 111 at 21-Jun-2017 11:11:14.335 CDT
+Begin processing the 23rd record. Run 1, Event 36655, LumiSection 111 at 21-Jun-2017 11:11:14.396 CDT
+Begin processing the 24th record. Run 1, Event 36650, LumiSection 111 at 21-Jun-2017 11:11:14.593 CDT
+Begin processing the 25th record. Run 1, Event 36654, LumiSection 111 at 21-Jun-2017 11:11:14.593 CDT
+Begin processing the 26th record. Run 1, Event 36657, LumiSection 111 at 21-Jun-2017 11:11:15.947 CDT
+Begin processing the 27th record. Run 1, Event 36659, LumiSection 111 at 21-Jun-2017 11:11:17.679 CDT
+Begin processing the 28th record. Run 1, Event 36656, LumiSection 111 at 21-Jun-2017 11:11:17.679 CDT
+Begin processing the 29th record. Run 1, Event 36662, LumiSection 111 at 21-Jun-2017 11:11:18.007 CDT
+DTTSPhi::addTracoT: preview not present in TRACO trigger or its code=0  trigger not added!
+Begin processing the 30th record. Run 1, Event 36658, LumiSection 111 at 21-Jun-2017 11:11:18.154 CDT
+Begin processing the 31st record. Run 1, Event 36663, LumiSection 111 at 21-Jun-2017 11:11:19.526 CDT
+Begin processing the 32nd record. Run 1, Event 36660, LumiSection 111 at 21-Jun-2017 11:11:19.639 CDT
+Begin processing the 33rd record. Run 1, Event 36664, LumiSection 111 at 21-Jun-2017 11:11:20.997 CDT
+Begin processing the 34th record. Run 1, Event 36661, LumiSection 111 at 21-Jun-2017 11:11:21.736 CDT
+Begin processing the 35th record. Run 1, Event 36669, LumiSection 111 at 21-Jun-2017 11:11:21.737 CDT
+Begin processing the 36th record. Run 1, Event 36666, LumiSection 111 at 21-Jun-2017 11:11:22.858 CDT
+%MSG-e TooManyClusters:  SiPixelClusterProducer:hltSiPixelClusters  21-Jun-2017 11:11:23 CDT Run: 1 Event: 36666
+Limit on the number of clusters exceeded. An empty cluster collection will be produced instead.
+
+%MSG
+Begin processing the 37th record. Run 1, Event 36667, LumiSection 111 at 21-Jun-2017 11:11:23.701 CDT
+Begin processing the 38th record. Run 1, Event 36665, LumiSection 111 at 21-Jun-2017 11:11:24.353 CDT
+Begin processing the 39th record. Run 1, Event 36670, LumiSection 111 at 21-Jun-2017 11:11:24.955 CDT
+Begin processing the 40th record. Run 1, Event 36671, LumiSection 111 at 21-Jun-2017 11:11:25.151 CDT
+Begin processing the 41st record. Run 1, Event 36668, LumiSection 111 at 21-Jun-2017 11:11:26.154 CDT
+Begin processing the 42nd record. Run 1, Event 36673, LumiSection 111 at 21-Jun-2017 11:11:27.981 CDT
+Begin processing the 43rd record. Run 1, Event 36675, LumiSection 111 at 21-Jun-2017 11:11:27.982 CDT
+Begin processing the 44th record. Run 1, Event 36672, LumiSection 111 at 21-Jun-2017 11:11:28.194 CDT
+Begin processing the 45th record. Run 1, Event 36678, LumiSection 111 at 21-Jun-2017 11:11:28.217 CDT
+Begin processing the 46th record. Run 1, Event 36676, LumiSection 111 at 21-Jun-2017 11:11:30.433 CDT
+Begin processing the 47th record. Run 1, Event 36677, LumiSection 111 at 21-Jun-2017 11:11:30.433 CDT
+Begin processing the 48th record. Run 1, Event 36674, LumiSection 111 at 21-Jun-2017 11:11:30.675 CDT
+Begin processing the 49th record. Run 1, Event 36681, LumiSection 111 at 21-Jun-2017 11:11:32.017 CDT
+Begin processing the 50th record. Run 1, Event 36680, LumiSection 111 at 21-Jun-2017 11:11:32.094 CDT
+%MSG-w PulseChiSqSNNLS::Minimize:   EcalUncalibRecHitProducer:hltEcalUncalibRecHit 21-Jun-2017 11:11:32 CDT  Run: 1 Event: 36680
+Max Iterations reached at iter 50
+%MSG
+Begin processing the 51st record. Run 1, Event 36682, LumiSection 111 at 21-Jun-2017 11:11:33.197 CDT
+Begin processing the 52nd record. Run 1, Event 36684, LumiSection 111 at 21-Jun-2017 11:11:35.612 CDT
+Begin processing the 53rd record. Run 1, Event 36683, LumiSection 111 at 21-Jun-2017 11:11:35.612 CDT
+Begin processing the 54th record. Run 1, Event 36679, LumiSection 111 at 21-Jun-2017 11:11:35.613 CDT
+Begin processing the 55th record. Run 1, Event 36685, LumiSection 111 at 21-Jun-2017 11:11:35.919 CDT
+Begin processing the 56th record. Run 1, Event 36687, LumiSection 111 at 21-Jun-2017 11:11:38.567 CDT
+Begin processing the 57th record. Run 1, Event 36689, LumiSection 111 at 21-Jun-2017 11:11:39.187 CDT
+Begin processing the 58th record. Run 1, Event 36688, LumiSection 111 at 21-Jun-2017 11:11:39.257 CDT
+Begin processing the 59th record. Run 1, Event 36686, LumiSection 111 at 21-Jun-2017 11:11:39.433 CDT
+Begin processing the 60th record. Run 1, Event 36690, LumiSection 111 at 21-Jun-2017 11:11:41.676 CDT
+Begin processing the 61st record. Run 1, Event 36691, LumiSection 111 at 21-Jun-2017 11:11:42.957 CDT
+Begin processing the 62nd record. Run 1, Event 36693, LumiSection 111 at 21-Jun-2017 11:11:42.957 CDT
+Begin processing the 63rd record. Run 1, Event 36692, LumiSection 111 at 21-Jun-2017 11:11:42.958 CDT
+Begin processing the 64th record. Run 1, Event 36694, LumiSection 111 at 21-Jun-2017 11:11:43.829 CDT
+Begin processing the 65th record. Run 1, Event 36695, LumiSection 111 at 21-Jun-2017 11:11:44.878 CDT
+Begin processing the 66th record. Run 1, Event 36701, LumiSection 111 at 21-Jun-2017 11:11:44.985 CDT
+Begin processing the 67th record. Run 1, Event 36698, LumiSection 111 at 21-Jun-2017 11:11:45.741 CDT
+Begin processing the 68th record. Run 1, Event 36696, LumiSection 111 at 21-Jun-2017 11:11:45.742 CDT
+Begin processing the 69th record. Run 1, Event 36697, LumiSection 111 at 21-Jun-2017 11:11:46.629 CDT
+Begin processing the 70th record. Run 1, Event 36700, LumiSection 111 at 21-Jun-2017 11:11:46.879 CDT
+Begin processing the 71st record. Run 1, Event 36702, LumiSection 111 at 21-Jun-2017 11:11:47.806 CDT
+Begin processing the 72nd record. Run 1, Event 36699, LumiSection 111 at 21-Jun-2017 11:11:47.929 CDT
+Begin processing the 73rd record. Run 1, Event 36703, LumiSection 111 at 21-Jun-2017 11:11:47.986 CDT
+Begin processing the 74th record. Run 1, Event 36705, LumiSection 111 at 21-Jun-2017 11:11:50.226 CDT
+Begin processing the 75th record. Run 1, Event 36706, LumiSection 111 at 21-Jun-2017 11:11:50.851 CDT
+Begin processing the 76th record. Run 1, Event 36707, LumiSection 111 at 21-Jun-2017 11:11:50.948 CDT
+Begin processing the 77th record. Run 1, Event 36709, LumiSection 111 at 21-Jun-2017 11:11:51.222 CDT
+Begin processing the 78th record. Run 1, Event 36708, LumiSection 111 at 21-Jun-2017 11:11:52.609 CDT
+Begin processing the 79th record. Run 1, Event 36712, LumiSection 111 at 21-Jun-2017 11:11:53.010 CDT
+Begin processing the 80th record. Run 1, Event 36710, LumiSection 111 at 21-Jun-2017 11:11:54.145 CDT
+Begin processing the 81st record. Run 1, Event 36704, LumiSection 111 at 21-Jun-2017 11:11:54.146 CDT
+Begin processing the 82nd record. Run 1, Event 36716, LumiSection 111 at 21-Jun-2017 11:11:54.146 CDT
+Begin processing the 83rd record. Run 1, Event 36711, LumiSection 111 at 21-Jun-2017 11:11:55.786 CDT
+Begin processing the 84th record. Run 1, Event 36714, LumiSection 111 at 21-Jun-2017 11:11:55.893 CDT
+Begin processing the 85th record. Run 1, Event 36713, LumiSection 111 at 21-Jun-2017 11:11:56.805 CDT
+Begin processing the 86th record. Run 1, Event 36715, LumiSection 111 at 21-Jun-2017 11:11:57.001 CDT
+Begin processing the 87th record. Run 1, Event 36719, LumiSection 111 at 21-Jun-2017 11:11:57.001 CDT
+Begin processing the 88th record. Run 1, Event 36717, LumiSection 111 at 21-Jun-2017 11:11:57.534 CDT
+Begin processing the 89th record. Run 1, Event 36718, LumiSection 111 at 21-Jun-2017 11:11:59.743 CDT
+Begin processing the 90th record. Run 1, Event 36720, LumiSection 111 at 21-Jun-2017 11:12:00.407 CDT
+Begin processing the 91st record. Run 1, Event 36723, LumiSection 111 at 21-Jun-2017 11:12:00.513 CDT
+Begin processing the 92nd record. Run 1, Event 36725, LumiSection 111 at 21-Jun-2017 11:12:00.639 CDT
+Begin processing the 93rd record. Run 1, Event 36721, LumiSection 111 at 21-Jun-2017 11:12:01.315 CDT
+Begin processing the 94th record. Run 1, Event 36722, LumiSection 111 at 21-Jun-2017 11:12:02.142 CDT
+Begin processing the 95th record. Run 1, Event 36727, LumiSection 111 at 21-Jun-2017 11:12:02.381 CDT
+Begin processing the 96th record. Run 1, Event 36726, LumiSection 111 at 21-Jun-2017 11:12:04.423 CDT
+Begin processing the 97th record. Run 1, Event 36728, LumiSection 111 at 21-Jun-2017 11:12:04.423 CDT
+Begin processing the 98th record. Run 1, Event 36724, LumiSection 111 at 21-Jun-2017 11:12:05.138 CDT
+Begin processing the 99th record. Run 1, Event 36730, LumiSection 111 at 21-Jun-2017 11:12:05.164 CDT
+Begin processing the 100th record. Run 1, Event 36729, LumiSection 111 at 21-Jun-2017 11:12:07.561 CDT
+21-Jun-2017 11:12:09 CDT  Closed file root://cmsxrootd.fnal.gov//store/mc/PhaseIFall16DR/GluGluHToBB_M125_13TeV_powheg_pythia8/GEN-SIM-RAW/FlatPU28to62HcalNZSRAW_HIG096_90X_upgrade2017_realistic_v6_C1-v1/00000/081394F4-C11A-E711-B81D-A4BF0108B862.root
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 100 passed = 71 failed = 29
+
+TrigReport ---------- Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+TrigReport     1    0        100          0        100          0 HLTriggerFirstPath
+TrigReport     1    1        100         71         29          0 HLT_HbbOpen_v1
+TrigReport     1    2        100          0        100          0 HLTriggerFinalPath
+
+TrigReport -------End-Path   Summary ------------
+TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+TrigReport     0    0        100        100          0          0 FULLOutput
+
+TrigReport ---------- Modules in Path: HLTriggerFirstPath ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0        100        100          0          0 unpackEcal
+TrigReport     1    1        100        100          0          0 unpackCSC
+TrigReport     1    2        100        100          0          0 unpackDT
+TrigReport     1    3        100        100          0          0 unpackRPC
+TrigReport     1    4        100        100          0          0 unpackEmtf
+TrigReport     1    5        100        100          0          0 unpackCsctf
+TrigReport     1    6        100        100          0          0 unpackBmtf
+TrigReport     1    7        100        100          0          0 simHcalTriggerPrimitiveDigis
+TrigReport     1    8        100        100          0          0 simCaloStage2Layer1Digis
+TrigReport     1    9        100        100          0          0 simCaloStage2Digis
+TrigReport     1   10        100        100          0          0 simDtTriggerPrimitiveDigis
+TrigReport     1   11        100        100          0          0 simCscTriggerPrimitiveDigis
+TrigReport     1   12        100        100          0          0 simTwinMuxDigis
+TrigReport     1   13        100        100          0          0 simBmtfDigis
+TrigReport     1   14        100        100          0          0 simEmtfDigis
+TrigReport     1   15        100        100          0          0 simOmtfDigis
+TrigReport     1   16        100        100          0          0 simGmtCaloSumDigis
+TrigReport     1   17        100        100          0          0 simGmtStage2Digis
+TrigReport     1   18        100        100          0          0 simGtExtFakeStage2Digis
+TrigReport     1   19        100        100          0          0 simGtStage2Digis
+TrigReport     1   20        100        100          0          0 packCaloStage2
+TrigReport     1   21        100        100          0          0 packGmtStage2
+TrigReport     1   22        100        100          0          0 packGtStage2
+TrigReport     1   23        100        100          0          0 rawDataCollector
+TrigReport     1   24        100        100          0          0 hltGetConditions
+TrigReport     1   25        100        100          0          0 hltGetRaw
+TrigReport     1   26        100          0        100          0 hltBoolFalse
+
+TrigReport ---------- Modules in Path: HLT_HbbOpen_v1 ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0        100        100          0          0 unpackEcal
+TrigReport     1    1        100        100          0          0 unpackCSC
+TrigReport     1    2        100        100          0          0 unpackDT
+TrigReport     1    3        100        100          0          0 unpackRPC
+TrigReport     1    4        100        100          0          0 unpackEmtf
+TrigReport     1    5        100        100          0          0 unpackCsctf
+TrigReport     1    6        100        100          0          0 unpackBmtf
+TrigReport     1    7        100        100          0          0 simHcalTriggerPrimitiveDigis
+TrigReport     1    8        100        100          0          0 simCaloStage2Layer1Digis
+TrigReport     1    9        100        100          0          0 simCaloStage2Digis
+TrigReport     1   10        100        100          0          0 simDtTriggerPrimitiveDigis
+TrigReport     1   11        100        100          0          0 simCscTriggerPrimitiveDigis
+TrigReport     1   12        100        100          0          0 simTwinMuxDigis
+TrigReport     1   13        100        100          0          0 simBmtfDigis
+TrigReport     1   14        100        100          0          0 simEmtfDigis
+TrigReport     1   15        100        100          0          0 simOmtfDigis
+TrigReport     1   16        100        100          0          0 simGmtCaloSumDigis
+TrigReport     1   17        100        100          0          0 simGmtStage2Digis
+TrigReport     1   18        100        100          0          0 simGtExtFakeStage2Digis
+TrigReport     1   19        100        100          0          0 simGtStage2Digis
+TrigReport     1   20        100        100          0          0 packCaloStage2
+TrigReport     1   21        100        100          0          0 packGmtStage2
+TrigReport     1   22        100        100          0          0 packGtStage2
+TrigReport     1   23        100        100          0          0 rawDataCollector
+TrigReport     1   24        100        100          0          0 hltTriggerType
+TrigReport     1   25        100        100          0          0 hltGtStage2Digis
+TrigReport     1   26        100        100          0          0 hltGtStage2ObjectMap
+TrigReport     1   27        100        100          0          0 hltScalersRawToDigi
+TrigReport     1   28        100        100          0          0 hltOnlineBeamSpot
+TrigReport     1   29        100        100          0          0 hltPreHbbOpen
+TrigReport     1   30        100        100          0          0 hltEcalDigis
+TrigReport     1   31        100        100          0          0 hltEcalUncalibRecHit
+TrigReport     1   32        100        100          0          0 hltEcalDetIdToBeRecovered
+TrigReport     1   33        100        100          0          0 hltEcalRecHit
+TrigReport     1   34        100        100          0          0 hltHcalDigis
+TrigReport     1   35        100        100          0          0 hltHbhePhase1Reco
+TrigReport     1   36        100        100          0          0 hltHbhereco
+TrigReport     1   37        100        100          0          0 hltHfprereco
+TrigReport     1   38        100        100          0          0 hltHfreco
+TrigReport     1   39        100        100          0          0 hltHoreco
+TrigReport     1   40        100        100          0          0 hltTowerMakerForAll
+TrigReport     1   41        100        100          0          0 hltAK4CaloJets
+TrigReport     1   42        100        100          0          0 hltAK4CaloJetsIDPassed
+TrigReport     1   43        100        100          0          0 hltFixedGridRhoFastjetAllCalo
+TrigReport     1   44        100        100          0          0 hltAK4CaloFastJetCorrector
+TrigReport     1   45        100        100          0          0 hltAK4CaloRelativeCorrector
+TrigReport     1   46        100        100          0          0 hltAK4CaloAbsoluteCorrector
+TrigReport     1   47        100        100          0          0 hltAK4CaloResidualCorrector
+TrigReport     1   48        100        100          0          0 hltAK4CaloCorrector
+TrigReport     1   49        100        100          0          0 hltAK4CaloJetsCorrected
+TrigReport     1   50        100        100          0          0 hltAK4CaloJetsCorrectedIDPassed
+TrigReport     1   51        100        100          0          0 hltEcalDigis
+TrigReport     1   52        100        100          0          0 hltEcalUncalibRecHit
+TrigReport     1   53        100        100          0          0 hltEcalDetIdToBeRecovered
+TrigReport     1   54        100        100          0          0 hltEcalRecHit
+TrigReport     1   55        100        100          0          0 hltHcalDigis
+TrigReport     1   56        100        100          0          0 hltHbhePhase1Reco
+TrigReport     1   57        100        100          0          0 hltHbhereco
+TrigReport     1   58        100        100          0          0 hltHfprereco
+TrigReport     1   59        100        100          0          0 hltHfreco
+TrigReport     1   60        100        100          0          0 hltHoreco
+TrigReport     1   61        100        100          0          0 hltTowerMakerForAll
+TrigReport     1   62        100        100          0          0 hltMet
+TrigReport     1   63        100        100          0          0 hltMet
+TrigReport     1   64        100        100          0          0 hltMht
+TrigReport     1   65        100        100          0          0 hltHtMht
+TrigReport     1   66        100        100          0          0 hltHcalNoiseInfoProducer
+TrigReport     1   67        100        100          0          0 hltHcalTowerNoiseCleanerWithrechit
+TrigReport     1   68        100        100          0          0 hltMetClean
+TrigReport     1   69        100        100          0          0 hltSelectorJets20L1FastJet
+TrigReport     1   70        100        100          0          0 hltSelectorCentralJets20L1FastJeta
+TrigReport     1   71        100        100          0          0 hltSiPixelDigisRegForBTag
+TrigReport     1   72        100        100          0          0 hltSiPixelClustersRegForBTag
+TrigReport     1   73        100        100          0          0 hltSiPixelClustersRegForBTagCache
+TrigReport     1   74        100        100          0          0 hltSiPixelRecHitsRegForBTag
+TrigReport     1   75        100        100          0          0 hltPixelLayerQuadrupletsRegForBTag
+TrigReport     1   76        100        100          0          0 hltSelector4CentralJetsL1FastJet
+TrigReport     1   77        100        100          0          0 hltFastPrimaryVertex
+TrigReport     1   78        100        100          0          0 hltFastPVPixelVertexFilter
+TrigReport     1   79        100        100          0          0 hltFastPVPixelTracksFilter
+TrigReport     1   80        100        100          0          0 hltFastPVPixelTracksFitter
+TrigReport     1   81        100        100          0          0 hltFastPVPixelTracksTrackingRegions
+TrigReport     1   82        100        100          0          0 hltFastPVPixelTracksHitDoublets
+TrigReport     1   83        100        100          0          0 hltFastPVPixelTracksHitQuadruplets
+TrigReport     1   84        100        100          0          0 hltFastPVPixelTracks
+TrigReport     1   85        100        100          0          0 hltFastPVJetTracksAssociator
+TrigReport     1   86        100        100          0          0 hltFastPVJetVertexChecker
+TrigReport     1   87        100        100          0          0 hltFastPVPixelTracksRecoverFilter
+TrigReport     1   88        100        100          0          0 hltFastPVPixelTracksRecoverFitter
+TrigReport     1   89        100        100          0          0 hltFastPVPixelTracksTrackingRegionsRecover
+TrigReport     1   90        100        100          0          0 hltFastPVPixelTracksHitDoubletsRecover
+TrigReport     1   91        100        100          0          0 hltFastPVPixelTracksHitQuadrupletsRecover
+TrigReport     1   92        100        100          0          0 hltFastPVPixelTracksRecover
+TrigReport     1   93        100        100          0          0 hltFastPVPixelTracksMerger
+TrigReport     1   94        100        100          0          0 hltFastPVPixelVertices
+TrigReport     1   95        100        100          0          0 hltFastPVPixelVerticesFilter
+TrigReport     1   96        100        100          0          0 hltPixelTracksForNoPUFilter
+TrigReport     1   97        100        100          0          0 hltSelectorJets20L1FastJetForNoPU
+TrigReport     1   98        100        100          0          0 hltPixelTracksForNoPUFitter
+TrigReport     1   99        100        100          0          0 hltPixelTracksTrackingRegionsForNoPU
+TrigReport     1  100        100        100          0          0 hltPixelTracksHitDoubletsForNoPU
+TrigReport     1  101        100        100          0          0 hltPixelTracksHitQuadrupletsForNoPU
+TrigReport     1  102        100        100          0          0 hltPixelTracksForNoPU
+TrigReport     1  103        100        100          0          0 hltCaloJetFromPV
+TrigReport     1  104        100        100          0          0 hltMHTNoPU
+TrigReport     1  105        100        100          0          0 hltSelectorJets30L1FastJet
+TrigReport     1  106        100        100          0          0 hltSelectorCentralJets30L1FastJeta
+TrigReport     1  107        100        100          0          0 hltSelector8CentralJetsL1FastJet
+TrigReport     1  108        100        100          0          0 hltSelectorJets20L1FastJet
+TrigReport     1  109        100        100          0          0 hltSelectorCentralJets20L1FastJeta
+TrigReport     1  110        100        100          0          0 hltSiPixelDigisRegForBTag
+TrigReport     1  111        100        100          0          0 hltSiPixelClustersRegForBTag
+TrigReport     1  112        100        100          0          0 hltSiPixelClustersRegForBTagCache
+TrigReport     1  113        100        100          0          0 hltSiPixelRecHitsRegForBTag
+TrigReport     1  114        100        100          0          0 hltPixelLayerQuadrupletsRegForBTag
+TrigReport     1  115        100        100          0          0 hltSelector4CentralJetsL1FastJet
+TrigReport     1  116        100        100          0          0 hltFastPrimaryVertex
+TrigReport     1  117        100        100          0          0 hltFastPVPixelVertexFilter
+TrigReport     1  118        100        100          0          0 hltFastPVPixelTracksFilter
+TrigReport     1  119        100        100          0          0 hltFastPVPixelTracksFitter
+TrigReport     1  120        100        100          0          0 hltFastPVPixelTracksTrackingRegions
+TrigReport     1  121        100        100          0          0 hltFastPVPixelTracksHitDoublets
+TrigReport     1  122        100        100          0          0 hltFastPVPixelTracksHitQuadruplets
+TrigReport     1  123        100        100          0          0 hltFastPVPixelTracks
+TrigReport     1  124        100        100          0          0 hltFastPVJetTracksAssociator
+TrigReport     1  125        100        100          0          0 hltFastPVJetVertexChecker
+TrigReport     1  126        100        100          0          0 hltFastPVPixelTracksRecoverFilter
+TrigReport     1  127        100        100          0          0 hltFastPVPixelTracksRecoverFitter
+TrigReport     1  128        100        100          0          0 hltFastPVPixelTracksTrackingRegionsRecover
+TrigReport     1  129        100        100          0          0 hltFastPVPixelTracksHitDoubletsRecover
+TrigReport     1  130        100        100          0          0 hltFastPVPixelTracksHitQuadrupletsRecover
+TrigReport     1  131        100        100          0          0 hltFastPVPixelTracksRecover
+TrigReport     1  132        100        100          0          0 hltFastPVPixelTracksMerger
+TrigReport     1  133        100        100          0          0 hltFastPVPixelVertices
+TrigReport     1  134        100        100          0          0 hltFastPVPixelVerticesFilter
+TrigReport     1  135        100        100          0          0 hltSiStripExcludedFEDListProducer
+TrigReport     1  136        100        100          0          0 hltSiStripRawToClustersFacility
+TrigReport     1  137        100        100          0          0 hltSiStripClustersRegForBTag
+TrigReport     1  138        100        100          0          0 hltIter0PFLowPixelSeedsFromPixelTracksForBTag
+TrigReport     1  139        100        100          0          0 hltIter0PFlowCkfTrackCandidatesForBTag
+TrigReport     1  140        100        100          0          0 hltIter0PFlowCtfWithMaterialTracksForBTag
+TrigReport     1  141        100        100          0          0 hltIter0PFlowTrackCutClassifierForBTag
+TrigReport     1  142        100        100          0          0 hltIter0PFlowTrackSelectionHighPurityForBTag
+TrigReport     1  143        100        100          0          0 hltIter1ClustersRefRemovalForBTag
+TrigReport     1  144        100        100          0          0 hltIter1MaskedMeasurementTrackerEventForBTag
+TrigReport     1  145        100        100          0          0 hltIter1PixelLayerQuadrupletsForBTag
+TrigReport     1  146        100        100          0          0 hltIter1PFlowPixelTrackingRegionsForBTag
+TrigReport     1  147        100        100          0          0 hltIter1PFlowPixelClusterCheckForBTag
+TrigReport     1  148        100        100          0          0 hltIter1PFlowPixelHitDoubletsForBTag
+TrigReport     1  149        100        100          0          0 hltIter1PFlowPixelHitQuadrupletsForBTag
+TrigReport     1  150        100        100          0          0 hltIter1PFlowPixelSeedsForBTag
+TrigReport     1  151        100        100          0          0 hltIter1PFlowCkfTrackCandidatesForBTag
+TrigReport     1  152        100        100          0          0 hltIter1PFlowCtfWithMaterialTracksForBTag
+TrigReport     1  153        100        100          0          0 hltIter1PFlowTrackCutClassifierPromptForBTag
+TrigReport     1  154        100        100          0          0 hltIter1PFlowTrackCutClassifierDetachedForBTag
+TrigReport     1  155        100        100          0          0 hltIter1PFlowTrackCutClassifierMergedForBTag
+TrigReport     1  156        100        100          0          0 hltIter1PFlowTrackSelectionHighPurityForBTag
+TrigReport     1  157        100        100          0          0 hltIter1MergedForBTag
+TrigReport     1  158        100        100          0          0 hltIter2ClustersRefRemovalForBTag
+TrigReport     1  159        100        100          0          0 hltIter2MaskedMeasurementTrackerEventForBTag
+TrigReport     1  160        100        100          0          0 hltIter2PixelLayerTripletsForBTag
+TrigReport     1  161        100        100          0          0 hltIter2PFlowPixelTrackingRegionsForBTag
+TrigReport     1  162        100        100          0          0 hltIter2PFlowPixelClusterCheckForBTag
+TrigReport     1  163        100        100          0          0 hltIter2PFlowPixelHitDoubletsForBTag
+TrigReport     1  164        100        100          0          0 hltIter2PFlowPixelHitTripletsForBTag
+TrigReport     1  165        100        100          0          0 hltIter2PFlowPixelSeedsForBTag
+TrigReport     1  166        100        100          0          0 hltIter2PFlowCkfTrackCandidatesForBTag
+TrigReport     1  167        100        100          0          0 hltIter2PFlowCtfWithMaterialTracksForBTag
+TrigReport     1  168        100        100          0          0 hltIter2PFlowTrackCutClassifierForBTag
+TrigReport     1  169        100        100          0          0 hltIter2PFlowTrackSelectionHighPurityForBTag
+TrigReport     1  170        100        100          0          0 hltIter2MergedForBTag
+TrigReport     1  171        100        100          0          0 hltVerticesL3
+TrigReport     1  172        100        100          0          0 hltFastPixelBLifetimeL3Associator
+TrigReport     1  173        100        100          0          0 hltImpactParameterTagInfos
+TrigReport     1  174        100        100          0          0 hltInclusiveVertexFinder
+TrigReport     1  175        100        100          0          0 hltInclusiveSecondaryVertices
+TrigReport     1  176        100        100          0          0 hltTrackVertexArbitrator
+TrigReport     1  177        100        100          0          0 hltInclusiveMergedVertices
+TrigReport     1  178        100        100          0          0 hltInclusiveSecondaryVertexFinderTagInfos
+TrigReport     1  179        100        100          0          0 hltCombinedSecondaryVertexBJetTagsCalo
+TrigReport     1  180        100         74         26          0 hltBTagCaloCSVp067Single
+TrigReport     1  181         74         74          0          0 hltEcalDigis
+TrigReport     1  182         74         74          0          0 hltEcalUncalibRecHit
+TrigReport     1  183         74         74          0          0 hltEcalDetIdToBeRecovered
+TrigReport     1  184         74         74          0          0 hltEcalRecHit
+TrigReport     1  185         74         74          0          0 hltHcalDigis
+TrigReport     1  186         74         74          0          0 hltHbhePhase1Reco
+TrigReport     1  187         74         74          0          0 hltHbhereco
+TrigReport     1  188         74         74          0          0 hltHfprereco
+TrigReport     1  189         74         74          0          0 hltHfreco
+TrigReport     1  190         74         74          0          0 hltHoreco
+TrigReport     1  191         74         74          0          0 hltTowerMakerForPF
+TrigReport     1  192         74         74          0          0 hltAK4CaloJetsPF
+TrigReport     1  193         74         74          0          0 hltAK4CaloJetsPFEt5
+TrigReport     1  194         74         74          0          0 hltMuonDTDigis
+TrigReport     1  195         74         74          0          0 hltDt1DRecHits
+TrigReport     1  196         74         74          0          0 hltDt4DSegments
+TrigReport     1  197         74         74          0          0 hltMuonCSCDigis
+TrigReport     1  198         74         74          0          0 hltCsc2DRecHits
+TrigReport     1  199         74         74          0          0 hltCscSegments
+TrigReport     1  200         74         74          0          0 hltMuonRPCDigis
+TrigReport     1  201         74         74          0          0 hltRpcRecHits
+TrigReport     1  202         74         74          0          0 hltL2OfflineMuonSeeds
+TrigReport     1  203         74         74          0          0 hltL2MuonSeeds
+TrigReport     1  204         74         74          0          0 hltL2Muons
+TrigReport     1  205         74         74          0          0 hltL2MuonCandidates
+TrigReport     1  206         74         74          0          0 hltSiPixelDigis
+TrigReport     1  207         74         74          0          0 hltSiPixelClusters
+TrigReport     1  208         74         74          0          0 hltSiPixelClustersCache
+TrigReport     1  209         74         74          0          0 hltSiPixelRecHits
+TrigReport     1  210         74         74          0          0 hltSiStripExcludedFEDListProducer
+TrigReport     1  211         74         74          0          0 hltSiStripRawToClustersFacility
+TrigReport     1  212         74         74          0          0 hltSiStripClusters
+TrigReport     1  213         74         74          0          0 hltL3TrajSeedOIState
+TrigReport     1  214         74         74          0          0 hltL3TrackCandidateFromL2OIState
+TrigReport     1  215         74         74          0          0 hltL3TkTracksFromL2OIState
+TrigReport     1  216         74         74          0          0 hltL3MuonsOIState
+TrigReport     1  217         74         74          0          0 hltL3TrajSeedOIHit
+TrigReport     1  218         74         74          0          0 hltL3TrackCandidateFromL2OIHit
+TrigReport     1  219         74         74          0          0 hltL3TkTracksFromL2OIHit
+TrigReport     1  220         74         74          0          0 hltL3MuonsOIHit
+TrigReport     1  221         74         74          0          0 hltL3TkFromL2OICombination
+TrigReport     1  222         74         74          0          0 hltPixelLayerTriplets
+TrigReport     1  223         74         74          0          0 hltPixelLayerPairs
+TrigReport     1  224         74         74          0          0 hltMixedLayerPairs
+TrigReport     1  225         74         74          0          0 hltL3TrajSeedIOHit
+TrigReport     1  226         74         74          0          0 hltL3TrackCandidateFromL2IOHit
+TrigReport     1  227         74         74          0          0 hltL3TkTracksFromL2IOHit
+TrigReport     1  228         74         74          0          0 hltL3MuonsIOHit
+TrigReport     1  229         74         74          0          0 hltL3TrajectorySeed
+TrigReport     1  230         74         74          0          0 hltL3TrackCandidateFromL2
+TrigReport     1  231         74         74          0          0 hltL3TkTracksMergeStep1
+TrigReport     1  232         74         74          0          0 hltL3TkTracksFromL2
+TrigReport     1  233         74         74          0          0 hltL3MuonsLinksCombination
+TrigReport     1  234         74         74          0          0 hltL3Muons
+TrigReport     1  235         74         74          0          0 hltL3MuonCandidates
+TrigReport     1  236         74         74          0          0 hltSiPixelDigis
+TrigReport     1  237         74         74          0          0 hltSiPixelClusters
+TrigReport     1  238         74         74          0          0 hltSiPixelClustersCache
+TrigReport     1  239         74         74          0          0 hltSiPixelRecHits
+TrigReport     1  240         74         74          0          0 hltPixelTracksFilter
+TrigReport     1  241         74         74          0          0 hltPixelTracksFitter
+TrigReport     1  242         74         74          0          0 hltPixelTracksTrackingRegions
+TrigReport     1  243         74         74          0          0 hltPixelLayerQuadruplets
+TrigReport     1  244         74         74          0          0 hltPixelTracksHitDoublets
+TrigReport     1  245         74         74          0          0 hltPixelTracksHitQuadruplets
+TrigReport     1  246         74         74          0          0 hltPixelTracks
+TrigReport     1  247         74         74          0          0 hltPixelVertices
+TrigReport     1  248         74         74          0          0 hltTrimmedPixelVertices
+TrigReport     1  249         74         74          0          0 hltSiStripExcludedFEDListProducer
+TrigReport     1  250         74         74          0          0 hltSiStripRawToClustersFacility
+TrigReport     1  251         74         74          0          0 hltSiStripClusters
+TrigReport     1  252         74         74          0          0 hltIter0PFLowPixelSeedsFromPixelTracks
+TrigReport     1  253         74         74          0          0 hltIter0PFlowCkfTrackCandidates
+TrigReport     1  254         74         74          0          0 hltIter0PFlowCtfWithMaterialTracks
+TrigReport     1  255         74         74          0          0 hltIter0PFlowTrackCutClassifier
+TrigReport     1  256         74         74          0          0 hltIter0PFlowTrackSelectionHighPurity
+TrigReport     1  257         74         74          0          0 hltTrackIter0RefsForJets4Iter1
+TrigReport     1  258         74         74          0          0 hltAK4Iter0TrackJets4Iter1
+TrigReport     1  259         74         74          0          0 hltIter0TrackAndTauJets4Iter1
+TrigReport     1  260         74         74          0          0 hltIter1ClustersRefRemoval
+TrigReport     1  261         74         74          0          0 hltIter1MaskedMeasurementTrackerEvent
+TrigReport     1  262         74         74          0          0 hltIter1PixelLayerQuadruplets
+TrigReport     1  263         74         74          0          0 hltIter1PFlowPixelTrackingRegions
+TrigReport     1  264         74         74          0          0 hltIter1PFlowPixelClusterCheck
+TrigReport     1  265         74         74          0          0 hltIter1PFlowPixelHitDoublets
+TrigReport     1  266         74         74          0          0 hltIter1PFlowPixelHitQuadruplets
+TrigReport     1  267         74         74          0          0 hltIter1PFlowPixelSeeds
+TrigReport     1  268         74         74          0          0 hltIter1PFlowCkfTrackCandidates
+TrigReport     1  269         74         74          0          0 hltIter1PFlowCtfWithMaterialTracks
+TrigReport     1  270         74         74          0          0 hltIter1PFlowTrackCutClassifierPrompt
+TrigReport     1  271         74         74          0          0 hltIter1PFlowTrackCutClassifierDetached
+TrigReport     1  272         74         74          0          0 hltIter1PFlowTrackCutClassifierMerged
+TrigReport     1  273         74         74          0          0 hltIter1PFlowTrackSelectionHighPurity
+TrigReport     1  274         74         74          0          0 hltIter1Merged
+TrigReport     1  275         74         74          0          0 hltIter1TrackRefsForJets4Iter2
+TrigReport     1  276         74         74          0          0 hltAK4Iter1TrackJets4Iter2
+TrigReport     1  277         74         74          0          0 hltIter1TrackAndTauJets4Iter2
+TrigReport     1  278         74         74          0          0 hltIter2ClustersRefRemoval
+TrigReport     1  279         74         74          0          0 hltIter2MaskedMeasurementTrackerEvent
+TrigReport     1  280         74         74          0          0 hltIter2PixelLayerTriplets
+TrigReport     1  281         74         74          0          0 hltIter2PFlowPixelTrackingRegions
+TrigReport     1  282         74         74          0          0 hltIter2PFlowPixelClusterCheck
+TrigReport     1  283         74         74          0          0 hltIter2PFlowPixelHitDoublets
+TrigReport     1  284         74         74          0          0 hltIter2PFlowPixelHitTriplets
+TrigReport     1  285         74         74          0          0 hltIter2PFlowPixelSeeds
+TrigReport     1  286         74         74          0          0 hltIter2PFlowCkfTrackCandidates
+TrigReport     1  287         74         74          0          0 hltIter2PFlowCtfWithMaterialTracks
+TrigReport     1  288         74         74          0          0 hltIter2PFlowTrackCutClassifier
+TrigReport     1  289         74         74          0          0 hltIter2PFlowTrackSelectionHighPurity
+TrigReport     1  290         74         74          0          0 hltIter2Merged
+TrigReport     1  291         74         74          0          0 hltPFMuonMerging
+TrigReport     1  292         74         74          0          0 hltMuonLinks
+TrigReport     1  293         74         74          0          0 hltMuons
+TrigReport     1  294         74         74          0          0 hltEcalPreshowerDigis
+TrigReport     1  295         74         74          0          0 hltEcalPreshowerRecHit
+TrigReport     1  296         74         74          0          0 hltParticleFlowRecHitECALUnseeded
+TrigReport     1  297         74         74          0          0 hltParticleFlowRecHitHBHE
+TrigReport     1  298         74         74          0          0 hltParticleFlowRecHitHCAL
+TrigReport     1  299         74         74          0          0 hltParticleFlowRecHitHF
+TrigReport     1  300         74         74          0          0 hltParticleFlowRecHitPSUnseeded
+TrigReport     1  301         74         74          0          0 hltParticleFlowClusterECALUncorrectedUnseeded
+TrigReport     1  302         74         74          0          0 hltParticleFlowClusterPSUnseeded
+TrigReport     1  303         74         74          0          0 hltParticleFlowClusterECALUnseeded
+TrigReport     1  304         74         74          0          0 hltParticleFlowClusterHBHE
+TrigReport     1  305         74         74          0          0 hltParticleFlowClusterHCAL
+TrigReport     1  306         74         74          0          0 hltParticleFlowClusterHF
+TrigReport     1  307         74         74          0          0 hltLightPFTracks
+TrigReport     1  308         74         74          0          0 hltParticleFlowBlock
+TrigReport     1  309         74         74          0          0 hltParticleFlow
+TrigReport     1  310         74         74          0          0 hltAK4PFJets
+TrigReport     1  311         74         74          0          0 hltAK4PFJetsLooseID
+TrigReport     1  312         74         74          0          0 hltAK4PFJetsTightID
+TrigReport     1  313         74         74          0          0 hltFixedGridRhoFastjetAll
+TrigReport     1  314         74         74          0          0 hltAK4PFFastJetCorrector
+TrigReport     1  315         74         74          0          0 hltAK4PFRelativeCorrector
+TrigReport     1  316         74         74          0          0 hltAK4PFAbsoluteCorrector
+TrigReport     1  317         74         74          0          0 hltAK4PFResidualCorrector
+TrigReport     1  318         74         74          0          0 hltAK4PFCorrector
+TrigReport     1  319         74         74          0          0 hltAK4PFJetsCorrected
+TrigReport     1  320         74         74          0          0 hltAK4PFJetsLooseIDCorrected
+TrigReport     1  321         74         74          0          0 hltAK4PFJetsTightIDCorrected
+TrigReport     1  322         74         74          0          0 hltVerticesPF
+TrigReport     1  323         74         74          0          0 hltVerticesPFSelector
+TrigReport     1  324         74         71          3          0 hltVerticesPFFilter
+TrigReport     1  325         71         71          0          0 hltPFJetForBtagSelector
+TrigReport     1  326         71         71          0          0 hltPFJetForBtag
+TrigReport     1  327         71         71          0          0 hltBLifetimeAssociatorPF
+TrigReport     1  328         71         71          0          0 hltBLifetimeTagInfosPF
+TrigReport     1  329         71         71          0          0 hltInclusiveVertexFinderPF
+TrigReport     1  330         71         71          0          0 hltInclusiveSecondaryVerticesPF
+TrigReport     1  331         71         71          0          0 hltTrackVertexArbitratorPF
+TrigReport     1  332         71         71          0          0 hltInclusiveMergedVerticesPF
+TrigReport     1  333         71         71          0          0 hltSecondaryVertexTagInfosPF
+TrigReport     1  334         71         71          0          0 hltCombinedSecondaryVertexBJetTagsPF
+TrigReport     1  335         71         71          0          0 hltPFMHTTightID
+TrigReport     1  336         71         71          0          0 hltPFMETProducer
+TrigReport     1  337         71         71          0          0 hltBoolEnd
+
+TrigReport ---------- Modules in Path: HLTriggerFinalPath ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     1    0        100        100          0          0 unpackEcal
+TrigReport     1    1        100        100          0          0 unpackCSC
+TrigReport     1    2        100        100          0          0 unpackDT
+TrigReport     1    3        100        100          0          0 unpackRPC
+TrigReport     1    4        100        100          0          0 unpackEmtf
+TrigReport     1    5        100        100          0          0 unpackCsctf
+TrigReport     1    6        100        100          0          0 unpackBmtf
+TrigReport     1    7        100        100          0          0 simHcalTriggerPrimitiveDigis
+TrigReport     1    8        100        100          0          0 simCaloStage2Layer1Digis
+TrigReport     1    9        100        100          0          0 simCaloStage2Digis
+TrigReport     1   10        100        100          0          0 simDtTriggerPrimitiveDigis
+TrigReport     1   11        100        100          0          0 simCscTriggerPrimitiveDigis
+TrigReport     1   12        100        100          0          0 simTwinMuxDigis
+TrigReport     1   13        100        100          0          0 simBmtfDigis
+TrigReport     1   14        100        100          0          0 simEmtfDigis
+TrigReport     1   15        100        100          0          0 simOmtfDigis
+TrigReport     1   16        100        100          0          0 simGmtCaloSumDigis
+TrigReport     1   17        100        100          0          0 simGmtStage2Digis
+TrigReport     1   18        100        100          0          0 simGtExtFakeStage2Digis
+TrigReport     1   19        100        100          0          0 simGtStage2Digis
+TrigReport     1   20        100        100          0          0 packCaloStage2
+TrigReport     1   21        100        100          0          0 packGmtStage2
+TrigReport     1   22        100        100          0          0 packGtStage2
+TrigReport     1   23        100        100          0          0 rawDataCollector
+TrigReport     1   24        100        100          0          0 hltGtStage2Digis
+TrigReport     1   25        100        100          0          0 hltScalersRawToDigi
+TrigReport     1   26        100        100          0          0 hltFEDSelector
+TrigReport     1   27        100        100          0          0 hltTriggerSummaryAOD
+TrigReport     1   28        100        100          0          0 hltTriggerSummaryRAW
+TrigReport     1   29        100          0        100          0 hltBoolFalse
+
+TrigReport ------ Modules in End-Path: FULLOutput ------------
+TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+TrigReport     0    0        100        100          0          0 hltOutputFULL
+
+TrigReport ---------- Module Summary ------------
+TrigReport    Visited   Executed     Passed     Failed      Error Name
+TrigReport        174        100        100          0          0 TriggerResults
+TrigReport        148        100        100          0          0 hltAK4CaloAbsoluteCorrector
+TrigReport        148        100        100          0          0 hltAK4CaloCorrector
+TrigReport        213        100        100          0          0 hltAK4CaloFastJetCorrector
+TrigReport        213        100        100          0          0 hltAK4CaloJets
+TrigReport        123         97         97          0          0 hltAK4CaloJetsCorrected
+TrigReport        165         95         95          0          0 hltAK4CaloJetsCorrectedIDPassed
+TrigReport        213        100        100          0          0 hltAK4CaloJetsIDPassed
+TrigReport        106         81         81          0          0 hltAK4CaloJetsPF
+TrigReport         87         87         87          0          0 hltAK4CaloJetsPFEt5
+TrigReport        169         97         97          0          0 hltAK4CaloRelativeCorrector
+TrigReport        165         95         95          0          0 hltAK4CaloResidualCorrector
+TrigReport        120         78         78          0          0 hltAK4Iter0TrackJets4Iter1
+TrigReport        125         81         81          0          0 hltAK4Iter1TrackJets4Iter2
+TrigReport        128         78         78          0          0 hltAK4PFAbsoluteCorrector
+TrigReport        128         78         78          0          0 hltAK4PFCorrector
+TrigReport        120         76         76          0          0 hltAK4PFFastJetCorrector
+TrigReport        127         77         77          0          0 hltAK4PFJets
+TrigReport        183         87         87          0          0 hltAK4PFJetsCorrected
+TrigReport        141         91         91          0          0 hltAK4PFJetsLooseID
+TrigReport        139         87         87          0          0 hltAK4PFJetsLooseIDCorrected
+TrigReport        141         91         91          0          0 hltAK4PFJetsTightID
+TrigReport        183         87         87          0          0 hltAK4PFJetsTightIDCorrected
+TrigReport         88         88         88          0          0 hltAK4PFRelativeCorrector
+TrigReport        128         78         77          1          0 hltAK4PFResidualCorrector
+TrigReport        165         91         91          0          0 hltBLifetimeAssociatorPF
+TrigReport        136         84         84          0          0 hltBLifetimeTagInfosPF
+TrigReport         86         86         77          9          0 hltBTagCaloCSVp067Single
+TrigReport        165         91         91          0          0 hltBoolEnd
+TrigReport        163         86         59         27          0 hltBoolFalse
+TrigReport        100        100        100          0          0 hltCaloJetFromPV
+TrigReport        100        100        100          0          0 hltCombinedSecondaryVertexBJetTagsCalo
+TrigReport        136         84         84          0          0 hltCombinedSecondaryVertexBJetTagsPF
+TrigReport        128         81         81          0          0 hltCsc2DRecHits
+TrigReport         91         91         91          0          0 hltCscSegments
+TrigReport         88         88         88          0          0 hltDt1DRecHits
+TrigReport         78         78         78          0          0 hltDt4DSegments
+TrigReport        135         90         90          0          0 hltEcalDetIdToBeRecovered
+TrigReport        153         86         86          0          0 hltEcalDigis
+TrigReport         90         74         74          0          0 hltEcalPreshowerDigis
+TrigReport         90         74         74          0          0 hltEcalPreshowerRecHit
+TrigReport        131         86         86          0          0 hltEcalRecHit
+TrigReport        135         90         90          0          0 hltEcalUncalibRecHit
+TrigReport        174        100        100          0          0 hltFEDSelector
+TrigReport        212         97         97          0          0 hltFastPVJetTracksAssociator
+TrigReport        212         97         97          0          0 hltFastPVJetVertexChecker
+TrigReport        181         93         93          0          0 hltFastPVPixelTracks
+TrigReport        212         97         97          0          0 hltFastPVPixelTracksFilter
+TrigReport        181         93         93          0          0 hltFastPVPixelTracksFitter
+TrigReport        193        100        100          0          0 hltFastPVPixelTracksHitDoublets
+TrigReport        163         86         86          0          0 hltFastPVPixelTracksHitDoubletsRecover
+TrigReport        152        100        100          0          0 hltFastPVPixelTracksHitQuadruplets
+TrigReport        123         96         96          0          0 hltFastPVPixelTracksHitQuadrupletsRecover
+TrigReport        163         86         86          0          0 hltFastPVPixelTracksMerger
+TrigReport        127        100        100          0          0 hltFastPVPixelTracksRecover
+TrigReport        152        100        100          0          0 hltFastPVPixelTracksRecoverFilter
+TrigReport        124         97         97          0          0 hltFastPVPixelTracksRecoverFitter
+TrigReport        212         97         97          0          0 hltFastPVPixelTracksTrackingRegions
+TrigReport        124         97         97          0          0 hltFastPVPixelTracksTrackingRegionsRecover
+TrigReport        148         96         71         25          0 hltFastPVPixelVertexFilter
+TrigReport        145         96         96          0          0 hltFastPVPixelVertices
+TrigReport        163         86         86          0          0 hltFastPVPixelVerticesFilter
+TrigReport        129         85         85          0          0 hltFastPixelBLifetimeL3Associator
+TrigReport        192         95         95          0          0 hltFastPrimaryVertex
+TrigReport         88         88         84          4          0 hltFixedGridRhoFastjetAll
+TrigReport        169         97         97          0          0 hltFixedGridRhoFastjetAllCalo
+TrigReport        130         86         85          1          0 hltGetConditions
+TrigReport        139         89         89          0          0 hltGetRaw
+TrigReport        166         89         89          0          0 hltGtStage2Digis
+TrigReport        165         95         69         26          0 hltGtStage2ObjectMap
+TrigReport        180         93         93          0          0 hltHbhePhase1Reco
+TrigReport        149         83         83          0          0 hltHbhereco
+TrigReport        183         96         96          0          0 hltHcalDigis
+TrigReport        213        100        100          0          0 hltHcalNoiseInfoProducer
+TrigReport        126        100        100          0          0 hltHcalTowerNoiseCleanerWithrechit
+TrigReport        149         83         83          0          0 hltHfprereco
+TrigReport        180         93         93          0          0 hltHfreco
+TrigReport        183         96         96          0          0 hltHoreco
+TrigReport        126        100        100          0          0 hltHtMht
+TrigReport         93         93         93          0          0 hltImpactParameterTagInfos
+TrigReport         93         93         93          0          0 hltInclusiveMergedVertices
+TrigReport        139         87         87          0          0 hltInclusiveMergedVerticesPF
+TrigReport         86         86         86          0          0 hltInclusiveSecondaryVertexFinderTagInfos
+TrigReport         97         97         97          0          0 hltInclusiveSecondaryVertices
+TrigReport        135         83         83          0          0 hltInclusiveSecondaryVerticesPF
+TrigReport        115         90         90          0          0 hltInclusiveVertexFinder
+TrigReport        136         84         84          0          0 hltInclusiveVertexFinderPF
+TrigReport        128         81         81          0          0 hltIter0PFLowPixelSeedsFromPixelTracks
+TrigReport         87         87         87          0          0 hltIter0PFLowPixelSeedsFromPixelTracksForBTag
+TrigReport         78         78         78          0          0 hltIter0PFlowCkfTrackCandidates
+TrigReport        100        100        100          0          0 hltIter0PFlowCkfTrackCandidatesForBTag
+TrigReport         74         74         74          0          0 hltIter0PFlowCtfWithMaterialTracks
+TrigReport        115         90         90          0          0 hltIter0PFlowCtfWithMaterialTracksForBTag
+TrigReport        106         81         81          0          0 hltIter0PFlowTrackCutClassifier
+TrigReport         97         97         97          0          0 hltIter0PFlowTrackCutClassifierForBTag
+TrigReport         81         81         81          0          0 hltIter0PFlowTrackSelectionHighPurity
+TrigReport         83         83         83          0          0 hltIter0PFlowTrackSelectionHighPurityForBTag
+TrigReport        106         81         81          0          0 hltIter0TrackAndTauJets4Iter1
+TrigReport         95         74         74          0          0 hltIter1ClustersRefRemoval
+TrigReport         93         93         93          0          0 hltIter1ClustersRefRemovalForBTag
+TrigReport        128         81         81          0          0 hltIter1MaskedMeasurementTrackerEvent
+TrigReport        108         86         86          0          0 hltIter1MaskedMeasurementTrackerEventForBTag
+TrigReport         84         84         84          0          0 hltIter1Merged
+TrigReport         97         97         97          0          0 hltIter1MergedForBTag
+TrigReport        114         88         88          0          0 hltIter1PFlowCkfTrackCandidates
+TrigReport         93         93         93          0          0 hltIter1PFlowCkfTrackCandidatesForBTag
+TrigReport         74         74         74          0          0 hltIter1PFlowCtfWithMaterialTracks
+TrigReport        102         83         83          0          0 hltIter1PFlowCtfWithMaterialTracksForBTag
+TrigReport        106         81         81          0          0 hltIter1PFlowPixelClusterCheck
+TrigReport         93         93         93          0          0 hltIter1PFlowPixelClusterCheckForBTag
+TrigReport         95         74         74          0          0 hltIter1PFlowPixelHitDoublets
+TrigReport         83         83         83          0          0 hltIter1PFlowPixelHitDoubletsForBTag
+TrigReport         74         74         74          0          0 hltIter1PFlowPixelHitQuadruplets
+TrigReport        100        100        100          0          0 hltIter1PFlowPixelHitQuadrupletsForBTag
+TrigReport         81         81         81          0          0 hltIter1PFlowPixelSeeds
+TrigReport         86         86         86          0          0 hltIter1PFlowPixelSeedsForBTag
+TrigReport         95         74         74          0          0 hltIter1PFlowPixelTrackingRegions
+TrigReport        102         83         83          0          0 hltIter1PFlowPixelTrackingRegionsForBTag
+TrigReport         77         77         77          0          0 hltIter1PFlowTrackCutClassifierDetached
+TrigReport         83         83         83          0          0 hltIter1PFlowTrackCutClassifierDetachedForBTag
+TrigReport         74         74         74          0          0 hltIter1PFlowTrackCutClassifierMerged
+TrigReport         93         93         93          0          0 hltIter1PFlowTrackCutClassifierMergedForBTag
+TrigReport        120         76         76          0          0 hltIter1PFlowTrackCutClassifierPrompt
+TrigReport         93         93         93          0          0 hltIter1PFlowTrackCutClassifierPromptForBTag
+TrigReport         84         84         84          0          0 hltIter1PFlowTrackSelectionHighPurity
+TrigReport         83         83         83          0          0 hltIter1PFlowTrackSelectionHighPurityForBTag
+TrigReport        103         78         78          0          0 hltIter1PixelLayerQuadruplets
+TrigReport         97         97         97          0          0 hltIter1PixelLayerQuadrupletsForBTag
+TrigReport         84         84         84          0          0 hltIter1TrackAndTauJets4Iter2
+TrigReport         84         84         84          0          0 hltIter1TrackRefsForJets4Iter2
+TrigReport        120         76         76          0          0 hltIter2ClustersRefRemoval
+TrigReport         82         82         82          0          0 hltIter2ClustersRefRemovalForBTag
+TrigReport         88         88         88          0          0 hltIter2MaskedMeasurementTrackerEvent
+TrigReport         97         97         97          0          0 hltIter2MaskedMeasurementTrackerEventForBTag
+TrigReport         84         84         84          0          0 hltIter2Merged
+TrigReport         87         87         87          0          0 hltIter2MergedForBTag
+TrigReport        130         80         80          0          0 hltIter2PFlowCkfTrackCandidates
+TrigReport         82         82         82          0          0 hltIter2PFlowCkfTrackCandidatesForBTag
+TrigReport        113         87         87          0          0 hltIter2PFlowCtfWithMaterialTracks
+TrigReport         93         93         93          0          0 hltIter2PFlowCtfWithMaterialTracksForBTag
+TrigReport        120         76         76          0          0 hltIter2PFlowPixelClusterCheck
+TrigReport        108         86         86          0          0 hltIter2PFlowPixelClusterCheckForBTag
+TrigReport        130         86         86          0          0 hltIter2PFlowPixelHitDoublets
+TrigReport        100        100        100          0          0 hltIter2PFlowPixelHitDoubletsForBTag
+TrigReport         78         78         78          0          0 hltIter2PFlowPixelHitTriplets
+TrigReport         87         87         87          0          0 hltIter2PFlowPixelHitTripletsForBTag
+TrigReport        117         91         91          0          0 hltIter2PFlowPixelSeeds
+TrigReport         87         87         87          0          0 hltIter2PFlowPixelSeedsForBTag
+TrigReport         91         91         91          0          0 hltIter2PFlowPixelTrackingRegions
+TrigReport         93         93         93          0          0 hltIter2PFlowPixelTrackingRegionsForBTag
+TrigReport         84         84         84          0          0 hltIter2PFlowTrackCutClassifier
+TrigReport         90         90         90          0          0 hltIter2PFlowTrackCutClassifierForBTag
+TrigReport        138         87         87          0          0 hltIter2PFlowTrackSelectionHighPurity
+TrigReport        100        100        100          0          0 hltIter2PFlowTrackSelectionHighPurityForBTag
+TrigReport         77         77         77          0          0 hltIter2PixelLayerTriplets
+TrigReport         87         87         87          0          0 hltIter2PixelLayerTripletsForBTag
+TrigReport         74         74         74          0          0 hltL2MuonCandidates
+TrigReport         74         74         74          0          0 hltL2MuonSeeds
+TrigReport         74         74         74          0          0 hltL2Muons
+TrigReport         74         74         74          0          0 hltL2OfflineMuonSeeds
+TrigReport         77         77         77          0          0 hltL3MuonCandidates
+TrigReport         78         78         78          0          0 hltL3Muons
+TrigReport         77         77         77          0          0 hltL3MuonsIOHit
+TrigReport         74         74         74          0          0 hltL3MuonsLinksCombination
+TrigReport        128         81         81          0          0 hltL3MuonsOIHit
+TrigReport         77         77         77          0          0 hltL3MuonsOIState
+TrigReport         74         74         74          0          0 hltL3TkFromL2OICombination
+TrigReport        116         91         91          0          0 hltL3TkTracksFromL2
+TrigReport         78         78         78          0          0 hltL3TkTracksFromL2IOHit
+TrigReport        103         81         81          0          0 hltL3TkTracksFromL2OIHit
+TrigReport        103         81         81          0          0 hltL3TkTracksFromL2OIState
+TrigReport        116         91         91          0          0 hltL3TkTracksMergeStep1
+TrigReport        142         91         91          0          0 hltL3TrackCandidateFromL2
+TrigReport         74         74         74          0          0 hltL3TrackCandidateFromL2IOHit
+TrigReport         77         77         77          0          0 hltL3TrackCandidateFromL2OIHit
+TrigReport         74         74         74          0          0 hltL3TrackCandidateFromL2OIState
+TrigReport         74         74         74          0          0 hltL3TrajSeedIOHit
+TrigReport         77         77         77          0          0 hltL3TrajSeedOIHit
+TrigReport         74         74         74          0          0 hltL3TrajSeedOIState
+TrigReport         84         84         84          0          0 hltL3TrajectorySeed
+TrigReport         78         78         78          0          0 hltLightPFTracks
+TrigReport         86         86         86          0          0 hltMHTNoPU
+TrigReport        153        100        100          0          0 hltMet
+TrigReport        148        100         78         22          0 hltMetClean
+TrigReport        148        100        100          0          0 hltMht
+TrigReport         74         74         74          0          0 hltMixedLayerPairs
+TrigReport         87         87         87          0          0 hltMuonCSCDigis
+TrigReport         81         81         81          0          0 hltMuonDTDigis
+TrigReport         88         88         88          0          0 hltMuonLinks
+TrigReport         74         74         74          0          0 hltMuonRPCDigis
+TrigReport         88         88         88          0          0 hltMuons
+TrigReport        100        100        100          0          0 hltOnlineBeamSpot
+TrigReport        174        100        100          0          0 hltOutputFULL
+TrigReport        165         91         91          0          0 hltPFJetForBtag
+TrigReport        136         84         84          0          0 hltPFJetForBtagSelector
+TrigReport        165         91         91          0          0 hltPFMETProducer
+TrigReport        136         84         84          0          0 hltPFMHTTightID
+TrigReport        142         91         91          0          0 hltPFMuonMerging
+TrigReport         84         84         84          0          0 hltParticleFlow
+TrigReport        115         77         77          0          0 hltParticleFlowBlock
+TrigReport        139         91         91          0          0 hltParticleFlowClusterECALUncorrectedUnseeded
+TrigReport         88         88         88          0          0 hltParticleFlowClusterECALUnseeded
+TrigReport        123         91         91          0          0 hltParticleFlowClusterHBHE
+TrigReport        116         84         84          0          0 hltParticleFlowClusterHCAL
+TrigReport        161         91         91          0          0 hltParticleFlowClusterHF
+TrigReport         90         74         74          0          0 hltParticleFlowClusterPSUnseeded
+TrigReport        164         91         91          0          0 hltParticleFlowRecHitECALUnseeded
+TrigReport        113         87         87          0          0 hltParticleFlowRecHitHBHE
+TrigReport         90         74         74          0          0 hltParticleFlowRecHitHCAL
+TrigReport        114         88         88          0          0 hltParticleFlowRecHitHF
+TrigReport         90         74         74          0          0 hltParticleFlowRecHitPSUnseeded
+TrigReport         74         74         74          0          0 hltPixelLayerPairs
+TrigReport         91         91         91          0          0 hltPixelLayerQuadruplets
+TrigReport        120         93         92          1          0 hltPixelLayerQuadrupletsRegForBTag
+TrigReport         74         74         74          0          0 hltPixelLayerTriplets
+TrigReport        127         77         77          0          0 hltPixelTracks
+TrigReport         81         81         81          0          0 hltPixelTracksFilter
+TrigReport         74         74         74          0          0 hltPixelTracksFitter
+TrigReport        108         86         86          0          0 hltPixelTracksForNoPU
+TrigReport        108         86         86          0          0 hltPixelTracksForNoPUFilter
+TrigReport         86         86         86          0          0 hltPixelTracksForNoPUFitter
+TrigReport        141         91         91          0          0 hltPixelTracksHitDoublets
+TrigReport         83         83         83          0          0 hltPixelTracksHitDoubletsForNoPU
+TrigReport        130         80         80          0          0 hltPixelTracksHitQuadruplets
+TrigReport        118         96         96          0          0 hltPixelTracksHitQuadrupletsForNoPU
+TrigReport         81         81         81          0          0 hltPixelTracksTrackingRegions
+TrigReport        100        100        100          0          0 hltPixelTracksTrackingRegionsForNoPU
+TrigReport        130         80         80          0          0 hltPixelVertices
+TrigReport        136         86         86          0          0 hltPreHbbOpen
+TrigReport         87         87         87          0          0 hltRpcRecHits
+TrigReport        127        100        100          0          0 hltScalersRawToDigi
+TrigReport        165         91         91          0          0 hltSecondaryVertexTagInfosPF
+TrigReport        166         95         95          0          0 hltSelector4CentralJetsL1FastJet
+TrigReport        102         83         83          0          0 hltSelector8CentralJetsL1FastJet
+TrigReport        192         95         95          0          0 hltSelectorCentralJets20L1FastJeta
+TrigReport        108         86         86          0          0 hltSelectorCentralJets30L1FastJeta
+TrigReport        150         97         97          0          0 hltSelectorJets20L1FastJet
+TrigReport         96         96         96          0          0 hltSelectorJets20L1FastJetForNoPU
+TrigReport         93         93         93          0          0 hltSelectorJets30L1FastJet
+TrigReport         95         77         77          0          0 hltSiPixelClusters
+TrigReport         92         74         74          0          0 hltSiPixelClustersCache
+TrigReport        174         96         96          0          0 hltSiPixelClustersRegForBTag
+TrigReport        117         90         87          3          0 hltSiPixelClustersRegForBTagCache
+TrigReport         92         74         74          0          0 hltSiPixelDigis
+TrigReport        119         92         92          0          0 hltSiPixelDigisRegForBTag
+TrigReport         92         74         74          0          0 hltSiPixelRecHits
+TrigReport        193        100        100          0          0 hltSiPixelRecHitsRegForBTag
+TrigReport        117         77         77          0          0 hltSiStripClusters
+TrigReport         93         93         93          0          0 hltSiStripClustersRegForBTag
+TrigReport        133         97         97          0          0 hltSiStripExcludedFEDListProducer
+TrigReport        144         86         86          0          0 hltSiStripRawToClustersFacility
+TrigReport        177        100        100          0          0 hltTowerMakerForAll
+TrigReport         87         87         87          0          0 hltTowerMakerForPF
+TrigReport        123         81         81          0          0 hltTrackIter0RefsForJets4Iter1
+TrigReport         82         82         82          0          0 hltTrackVertexArbitrator
+TrigReport        183         87         87          0          0 hltTrackVertexArbitratorPF
+TrigReport        174        100        100          0          0 hltTriggerSummaryAOD
+TrigReport        196        100        100          0          0 hltTriggerSummaryRAW
+TrigReport         93         93         83         10          0 hltTriggerType
+TrigReport        127         77         77          0          0 hltTrimmedPixelVertices
+TrigReport         96         96         96          0          0 hltVerticesL3
+TrigReport        139         87         87          0          0 hltVerticesPF
+TrigReport        139         87         87          0          0 hltVerticesPFFilter
+TrigReport        136         84         84          0          0 hltVerticesPFSelector
+TrigReport        191         87         87          0          0 packCaloStage2
+TrigReport        188         90         90          0          0 packGmtStage2
+TrigReport        191         87         87          0          0 packGtStage2
+TrigReport        144         90         90          0          0 rawDataCollector
+TrigReport        140         86         86          0          0 simBmtfDigis
+TrigReport        141         87         87          0          0 simCaloStage2Digis
+TrigReport        162         86         86          0          0 simCaloStage2Layer1Digis
+TrigReport        175         96         96          0          0 simCscTriggerPrimitiveDigis
+TrigReport        220        100        100          0          0 simDtTriggerPrimitiveDigis
+TrigReport        184         86         86          0          0 simEmtfDigis
+TrigReport        136         82         82          0          0 simGmtCaloSumDigis
+TrigReport        183         85         85          0          0 simGmtStage2Digis
+TrigReport        191         87         87          0          0 simGtExtFakeStage2Digis
+TrigReport        188         90         90          0          0 simGtStage2Digis
+TrigReport        220        100        100          0          0 simHcalTriggerPrimitiveDigis
+TrigReport        184         86         86          0          0 simOmtfDigis
+TrigReport        178         86         86          0          0 simTwinMuxDigis
+TrigReport        175         96         96          0          0 unpackBmtf
+TrigReport        179        100        100          0          0 unpackCSC
+TrigReport        179        100        100          0          0 unpackCsctf
+TrigReport        179        100        100          0          0 unpackDT
+TrigReport        204        100        100          0          0 unpackEcal
+TrigReport        220        100        100          0          0 unpackEmtf
+TrigReport        220        100        100          0          0 unpackRPC
+
+TimeReport ---------- Event  Summary ---[sec]----
+TimeReport       event loop CPU/event = 1.800265
+TimeReport      event loop Real/event = 1.705665
+TimeReport     sum Streams Real/event = 2.412186
+TimeReport efficiency CPU/Real/thread = 0.263866
+
+TimeReport ---------- Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport   0.918160     0.918160  HLTriggerFirstPath
+TimeReport   1.710386     1.710386  HLT_HbbOpen_v1
+TimeReport   1.710571     1.710571  HLTriggerFinalPath
+TimeReport  per event     per exec  Name
+
+TimeReport -------End-Path   Summary ---[Real sec]----
+TimeReport  per event     per exec  Name
+TimeReport   0.699303     0.699303  FULLOutput
+TimeReport  per event     per exec  Name
+
+TimeReport ---------- Modules in Path: HLTriggerFirstPath ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.000000     0.000000  unpackEcal
+TimeReport   0.000000     0.000000  unpackCSC
+TimeReport   0.000000     0.000000  unpackDT
+TimeReport   0.000018     0.000018  unpackRPC
+TimeReport   0.000005     0.000005  unpackEmtf
+TimeReport   0.000006     0.000006  unpackCsctf
+TimeReport   0.000006     0.000006  unpackBmtf
+TimeReport   0.002312     0.002312  simHcalTriggerPrimitiveDigis
+TimeReport   0.000919     0.000919  simCaloStage2Layer1Digis
+TimeReport   0.003309     0.003309  simCaloStage2Digis
+TimeReport   0.000623     0.000623  simDtTriggerPrimitiveDigis
+TimeReport   0.008367     0.008367  simCscTriggerPrimitiveDigis
+TimeReport   0.000141     0.000141  simTwinMuxDigis
+TimeReport   0.005125     0.005125  simBmtfDigis
+TimeReport   0.020915     0.020915  simEmtfDigis
+TimeReport   0.002302     0.002302  simOmtfDigis
+TimeReport   0.000802     0.000802  simGmtCaloSumDigis
+TimeReport   0.000096     0.000096  simGmtStage2Digis
+TimeReport   0.000006     0.000006  simGtExtFakeStage2Digis
+TimeReport   0.000267     0.000267  simGtStage2Digis
+TimeReport   0.000054     0.000054  packCaloStage2
+TimeReport   0.000038     0.000038  packGmtStage2
+TimeReport   0.000063     0.000063  packGtStage2
+TimeReport   0.000683     0.000683  rawDataCollector
+TimeReport   0.000167     0.000167  hltGetConditions
+TimeReport   0.000003     0.000003  hltGetRaw
+TimeReport   0.000001     0.000001  hltBoolFalse
+
+TimeReport ---------- Modules in Path: HLT_HbbOpen_v1 ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.000000     0.000000  unpackEcal
+TimeReport   0.000000     0.000000  unpackCSC
+TimeReport   0.000002     0.000002  unpackDT
+TimeReport   0.000005     0.000005  unpackRPC
+TimeReport   0.000004     0.000004  unpackEmtf
+TimeReport   0.000003     0.000003  unpackCsctf
+TimeReport   0.000003     0.000003  unpackBmtf
+TimeReport   0.001571     0.001571  simHcalTriggerPrimitiveDigis
+TimeReport   0.000710     0.000710  simCaloStage2Layer1Digis
+TimeReport   0.001850     0.001850  simCaloStage2Digis
+TimeReport   0.001580     0.001580  simDtTriggerPrimitiveDigis
+TimeReport   0.006945     0.006945  simCscTriggerPrimitiveDigis
+TimeReport   0.000084     0.000084  simTwinMuxDigis
+TimeReport   0.005298     0.005298  simBmtfDigis
+TimeReport   0.021525     0.021525  simEmtfDigis
+TimeReport   0.001967     0.001967  simOmtfDigis
+TimeReport   0.001211     0.001211  simGmtCaloSumDigis
+TimeReport   0.000076     0.000076  simGmtStage2Digis
+TimeReport   0.000011     0.000011  simGtExtFakeStage2Digis
+TimeReport   0.000529     0.000529  simGtStage2Digis
+TimeReport   0.000101     0.000101  packCaloStage2
+TimeReport   0.000065     0.000065  packGmtStage2
+TimeReport   0.000099     0.000099  packGtStage2
+TimeReport   0.001065     0.001065  rawDataCollector
+TimeReport   0.000001     0.000001  hltTriggerType
+TimeReport   0.000097     0.000097  hltGtStage2Digis
+TimeReport   0.002249     0.002249  hltGtStage2ObjectMap
+TimeReport   0.000006     0.000006  hltScalersRawToDigi
+TimeReport   0.000025     0.000025  hltOnlineBeamSpot
+TimeReport   0.000001     0.000001  hltPreHbbOpen
+TimeReport   0.004426     0.004426  hltEcalDigis
+TimeReport   0.033228     0.033228  hltEcalUncalibRecHit
+TimeReport   0.000162     0.000162  hltEcalDetIdToBeRecovered
+TimeReport   0.002002     0.002002  hltEcalRecHit
+TimeReport   0.005998     0.005998  hltHcalDigis
+TimeReport   0.042667     0.042667  hltHbhePhase1Reco
+TimeReport   0.001851     0.001851  hltHbhereco
+TimeReport   0.002928     0.002928  hltHfprereco
+TimeReport   0.001092     0.001092  hltHfreco
+TimeReport   0.000917     0.000917  hltHoreco
+TimeReport   0.006113     0.006113  hltTowerMakerForAll
+TimeReport   0.006608     0.006608  hltAK4CaloJets
+TimeReport   0.001473     0.001473  hltAK4CaloJetsIDPassed
+TimeReport   0.000543     0.000543  hltFixedGridRhoFastjetAllCalo
+TimeReport   0.000028     0.000028  hltAK4CaloFastJetCorrector
+TimeReport   0.000009     0.000009  hltAK4CaloRelativeCorrector
+TimeReport   0.000006     0.000006  hltAK4CaloAbsoluteCorrector
+TimeReport   0.000006     0.000006  hltAK4CaloResidualCorrector
+TimeReport   0.000009     0.000009  hltAK4CaloCorrector
+TimeReport   0.001012     0.001012  hltAK4CaloJetsCorrected
+TimeReport   0.000892     0.000892  hltAK4CaloJetsCorrectedIDPassed
+TimeReport   0.000000     0.000000  hltEcalDigis
+TimeReport   0.000000     0.000000  hltEcalUncalibRecHit
+TimeReport   0.000000     0.000000  hltEcalDetIdToBeRecovered
+TimeReport   0.000000     0.000000  hltEcalRecHit
+TimeReport   0.000000     0.000000  hltHcalDigis
+TimeReport   0.000000     0.000000  hltHbhePhase1Reco
+TimeReport   0.000000     0.000000  hltHbhereco
+TimeReport   0.000000     0.000000  hltHfprereco
+TimeReport   0.000000     0.000000  hltHfreco
+TimeReport   0.000000     0.000000  hltHoreco
+TimeReport   0.000000     0.000000  hltTowerMakerForAll
+TimeReport   0.001236     0.001236  hltMet
+TimeReport   0.000000     0.000000  hltMet
+TimeReport   0.000056     0.000056  hltMht
+TimeReport   0.000041     0.000041  hltHtMht
+TimeReport   0.014202     0.014202  hltHcalNoiseInfoProducer
+TimeReport   0.001438     0.001438  hltHcalTowerNoiseCleanerWithrechit
+TimeReport   0.001248     0.001248  hltMetClean
+TimeReport   0.000032     0.000032  hltSelectorJets20L1FastJet
+TimeReport   0.000017     0.000017  hltSelectorCentralJets20L1FastJeta
+TimeReport   0.013386     0.013386  hltSiPixelDigisRegForBTag
+TimeReport   0.005564     0.005564  hltSiPixelClustersRegForBTag
+TimeReport   0.002228     0.002228  hltSiPixelClustersRegForBTagCache
+TimeReport   0.003772     0.003772  hltSiPixelRecHitsRegForBTag
+TimeReport   0.000134     0.000134  hltPixelLayerQuadrupletsRegForBTag
+TimeReport   0.000024     0.000024  hltSelector4CentralJetsL1FastJet
+TimeReport   0.002824     0.002824  hltFastPrimaryVertex
+TimeReport   0.000024     0.000024  hltFastPVPixelVertexFilter
+TimeReport   0.000009     0.000009  hltFastPVPixelTracksFilter
+TimeReport   0.000011     0.000011  hltFastPVPixelTracksFitter
+TimeReport   0.000026     0.000026  hltFastPVPixelTracksTrackingRegions
+TimeReport   0.004282     0.004282  hltFastPVPixelTracksHitDoublets
+TimeReport   0.000754     0.000754  hltFastPVPixelTracksHitQuadruplets
+TimeReport   0.000169     0.000169  hltFastPVPixelTracks
+TimeReport   0.000043     0.000043  hltFastPVJetTracksAssociator
+TimeReport   0.000020     0.000020  hltFastPVJetVertexChecker
+TimeReport   0.000006     0.000006  hltFastPVPixelTracksRecoverFilter
+TimeReport   0.000007     0.000007  hltFastPVPixelTracksRecoverFitter
+TimeReport   0.000013     0.000013  hltFastPVPixelTracksTrackingRegionsRecover
+TimeReport   0.000774     0.000774  hltFastPVPixelTracksHitDoubletsRecover
+TimeReport   0.000537     0.000537  hltFastPVPixelTracksHitQuadrupletsRecover
+TimeReport   0.000066     0.000066  hltFastPVPixelTracksRecover
+TimeReport   0.000068     0.000068  hltFastPVPixelTracksMerger
+TimeReport   0.000090     0.000090  hltFastPVPixelVertices
+TimeReport   0.000018     0.000018  hltFastPVPixelVerticesFilter
+TimeReport   0.000006     0.000006  hltPixelTracksForNoPUFilter
+TimeReport   0.000027     0.000027  hltSelectorJets20L1FastJetForNoPU
+TimeReport   0.000008     0.000008  hltPixelTracksForNoPUFitter
+TimeReport   0.000019     0.000019  hltPixelTracksTrackingRegionsForNoPU
+TimeReport   0.005167     0.005167  hltPixelTracksHitDoubletsForNoPU
+TimeReport   0.001123     0.001123  hltPixelTracksHitQuadrupletsForNoPU
+TimeReport   0.000221     0.000221  hltPixelTracksForNoPU
+TimeReport   0.000132     0.000132  hltCaloJetFromPV
+TimeReport   0.000022     0.000022  hltMHTNoPU
+TimeReport   0.000016     0.000016  hltSelectorJets30L1FastJet
+TimeReport   0.000011     0.000011  hltSelectorCentralJets30L1FastJeta
+TimeReport   0.000011     0.000011  hltSelector8CentralJetsL1FastJet
+TimeReport   0.000000     0.000000  hltSelectorJets20L1FastJet
+TimeReport   0.000000     0.000000  hltSelectorCentralJets20L1FastJeta
+TimeReport   0.000000     0.000000  hltSiPixelDigisRegForBTag
+TimeReport   0.000000     0.000000  hltSiPixelClustersRegForBTag
+TimeReport   0.000000     0.000000  hltSiPixelClustersRegForBTagCache
+TimeReport   0.000000     0.000000  hltSiPixelRecHitsRegForBTag
+TimeReport   0.000000     0.000000  hltPixelLayerQuadrupletsRegForBTag
+TimeReport   0.000000     0.000000  hltSelector4CentralJetsL1FastJet
+TimeReport   0.000000     0.000000  hltFastPrimaryVertex
+TimeReport   0.000000     0.000000  hltFastPVPixelVertexFilter
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksFilter
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksFitter
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksTrackingRegions
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksHitDoublets
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksHitQuadruplets
+TimeReport   0.000000     0.000000  hltFastPVPixelTracks
+TimeReport   0.000000     0.000000  hltFastPVJetTracksAssociator
+TimeReport   0.000000     0.000000  hltFastPVJetVertexChecker
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksRecoverFilter
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksRecoverFitter
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksTrackingRegionsRecover
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksHitDoubletsRecover
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksHitQuadrupletsRecover
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksRecover
+TimeReport   0.000000     0.000000  hltFastPVPixelTracksMerger
+TimeReport   0.000000     0.000000  hltFastPVPixelVertices
+TimeReport   0.000000     0.000000  hltFastPVPixelVerticesFilter
+TimeReport   0.000026     0.000026  hltSiStripExcludedFEDListProducer
+TimeReport   0.000232     0.000232  hltSiStripRawToClustersFacility
+TimeReport   0.000229     0.000229  hltSiStripClustersRegForBTag
+TimeReport   0.000599     0.000599  hltIter0PFLowPixelSeedsFromPixelTracksForBTag
+TimeReport   0.010627     0.010627  hltIter0PFlowCkfTrackCandidatesForBTag
+TimeReport   0.004202     0.004202  hltIter0PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000048     0.000048  hltIter0PFlowTrackCutClassifierForBTag
+TimeReport   0.000109     0.000109  hltIter0PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000036     0.000036  hltIter1ClustersRefRemovalForBTag
+TimeReport   0.000037     0.000037  hltIter1MaskedMeasurementTrackerEventForBTag
+TimeReport   0.000296     0.000296  hltIter1PixelLayerQuadrupletsForBTag
+TimeReport   0.000057     0.000057  hltIter1PFlowPixelTrackingRegionsForBTag
+TimeReport   0.000009     0.000009  hltIter1PFlowPixelClusterCheckForBTag
+TimeReport   0.009637     0.009637  hltIter1PFlowPixelHitDoubletsForBTag
+TimeReport   0.001428     0.001428  hltIter1PFlowPixelHitQuadrupletsForBTag
+TimeReport   0.001998     0.001998  hltIter1PFlowPixelSeedsForBTag
+TimeReport   0.038876     0.038876  hltIter1PFlowCkfTrackCandidatesForBTag
+TimeReport   0.006891     0.006891  hltIter1PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000055     0.000055  hltIter1PFlowTrackCutClassifierPromptForBTag
+TimeReport   0.000046     0.000046  hltIter1PFlowTrackCutClassifierDetachedForBTag
+TimeReport   0.000014     0.000014  hltIter1PFlowTrackCutClassifierMergedForBTag
+TimeReport   0.000142     0.000142  hltIter1PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000284     0.000284  hltIter1MergedForBTag
+TimeReport   0.000059     0.000059  hltIter2ClustersRefRemovalForBTag
+TimeReport   0.000048     0.000048  hltIter2MaskedMeasurementTrackerEventForBTag
+TimeReport   0.000287     0.000287  hltIter2PixelLayerTripletsForBTag
+TimeReport   0.000051     0.000051  hltIter2PFlowPixelTrackingRegionsForBTag
+TimeReport   0.000008     0.000008  hltIter2PFlowPixelClusterCheckForBTag
+TimeReport   0.007153     0.007153  hltIter2PFlowPixelHitDoubletsForBTag
+TimeReport   0.000579     0.000579  hltIter2PFlowPixelHitTripletsForBTag
+TimeReport   0.000323     0.000323  hltIter2PFlowPixelSeedsForBTag
+TimeReport   0.003942     0.003942  hltIter2PFlowCkfTrackCandidatesForBTag
+TimeReport   0.001118     0.001118  hltIter2PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000023     0.000023  hltIter2PFlowTrackCutClassifierForBTag
+TimeReport   0.000045     0.000045  hltIter2PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000266     0.000266  hltIter2MergedForBTag
+TimeReport   0.008762     0.008762  hltVerticesL3
+TimeReport   0.000048     0.000048  hltFastPixelBLifetimeL3Associator
+TimeReport   0.001142     0.001142  hltImpactParameterTagInfos
+TimeReport   0.007228     0.007228  hltInclusiveVertexFinder
+TimeReport   0.000214     0.000214  hltInclusiveSecondaryVertices
+TimeReport   0.001224     0.001224  hltTrackVertexArbitrator
+TimeReport   0.000021     0.000021  hltInclusiveMergedVertices
+TimeReport   0.000230     0.000230  hltInclusiveSecondaryVertexFinderTagInfos
+TimeReport   0.000188     0.000188  hltCombinedSecondaryVertexBJetTagsCalo
+TimeReport   0.000051     0.000051  hltBTagCaloCSVp067Single
+TimeReport   0.000000     0.000000  hltEcalDigis
+TimeReport   0.000000     0.000000  hltEcalUncalibRecHit
+TimeReport   0.000000     0.000000  hltEcalDetIdToBeRecovered
+TimeReport   0.000000     0.000000  hltEcalRecHit
+TimeReport   0.000000     0.000000  hltHcalDigis
+TimeReport   0.000000     0.000000  hltHbhePhase1Reco
+TimeReport   0.000000     0.000000  hltHbhereco
+TimeReport   0.000000     0.000000  hltHfprereco
+TimeReport   0.000000     0.000000  hltHfreco
+TimeReport   0.000000     0.000000  hltHoreco
+TimeReport   0.005400     0.007298  hltTowerMakerForPF
+TimeReport   0.003672     0.004963  hltAK4CaloJetsPF
+TimeReport   0.000086     0.000116  hltAK4CaloJetsPFEt5
+TimeReport   0.000075     0.000101  hltMuonDTDigis
+TimeReport   0.000102     0.000137  hltDt1DRecHits
+TimeReport   0.000310     0.000419  hltDt4DSegments
+TimeReport   0.006872     0.009286  hltMuonCSCDigis
+TimeReport   0.002202     0.002976  hltCsc2DRecHits
+TimeReport   0.000695     0.000939  hltCscSegments
+TimeReport   0.000080     0.000108  hltMuonRPCDigis
+TimeReport   0.000075     0.000101  hltRpcRecHits
+TimeReport   0.000381     0.000515  hltL2OfflineMuonSeeds
+TimeReport   0.000065     0.000088  hltL2MuonSeeds
+TimeReport   0.000431     0.000583  hltL2Muons
+TimeReport   0.000011     0.000015  hltL2MuonCandidates
+TimeReport   0.005554     0.007506  hltSiPixelDigis
+TimeReport   0.008785     0.011872  hltSiPixelClusters
+TimeReport   0.003325     0.004493  hltSiPixelClustersCache
+TimeReport   0.005747     0.007766  hltSiPixelRecHits
+TimeReport   0.000000     0.000000  hltSiStripExcludedFEDListProducer
+TimeReport   0.000000     0.000000  hltSiStripRawToClustersFacility
+TimeReport   0.000167     0.000225  hltSiStripClusters
+TimeReport   0.000104     0.000140  hltL3TrajSeedOIState
+TimeReport   0.000231     0.000313  hltL3TrackCandidateFromL2OIState
+TimeReport   0.000054     0.000073  hltL3TkTracksFromL2OIState
+TimeReport   0.000177     0.000239  hltL3MuonsOIState
+TimeReport   0.000034     0.000046  hltL3TrajSeedOIHit
+TimeReport   0.000051     0.000069  hltL3TrackCandidateFromL2OIHit
+TimeReport   0.000030     0.000041  hltL3TkTracksFromL2OIHit
+TimeReport   0.000055     0.000074  hltL3MuonsOIHit
+TimeReport   0.000007     0.000010  hltL3TkFromL2OICombination
+TimeReport   0.000187     0.000253  hltPixelLayerTriplets
+TimeReport   0.000105     0.000142  hltPixelLayerPairs
+TimeReport   0.000113     0.000153  hltMixedLayerPairs
+TimeReport   0.000078     0.000106  hltL3TrajSeedIOHit
+TimeReport   0.000076     0.000103  hltL3TrackCandidateFromL2IOHit
+TimeReport   0.000028     0.000038  hltL3TkTracksFromL2IOHit
+TimeReport   0.000041     0.000056  hltL3MuonsIOHit
+TimeReport   0.000009     0.000012  hltL3TrajectorySeed
+TimeReport   0.000007     0.000010  hltL3TrackCandidateFromL2
+TimeReport   0.000030     0.000041  hltL3TkTracksMergeStep1
+TimeReport   0.000021     0.000028  hltL3TkTracksFromL2
+TimeReport   0.000008     0.000010  hltL3MuonsLinksCombination
+TimeReport   0.000005     0.000007  hltL3Muons
+TimeReport   0.000009     0.000012  hltL3MuonCandidates
+TimeReport   0.000000     0.000000  hltSiPixelDigis
+TimeReport   0.000000     0.000000  hltSiPixelClusters
+TimeReport   0.000000     0.000000  hltSiPixelClustersCache
+TimeReport   0.000000     0.000000  hltSiPixelRecHits
+TimeReport   0.000006     0.000008  hltPixelTracksFilter
+TimeReport   0.000007     0.000010  hltPixelTracksFitter
+TimeReport   0.000009     0.000012  hltPixelTracksTrackingRegions
+TimeReport   0.000166     0.000225  hltPixelLayerQuadruplets
+TimeReport   0.008060     0.010892  hltPixelTracksHitDoublets
+TimeReport   0.020401     0.027568  hltPixelTracksHitQuadruplets
+TimeReport   0.005198     0.007025  hltPixelTracks
+TimeReport   0.000456     0.000617  hltPixelVertices
+TimeReport   0.000014     0.000019  hltTrimmedPixelVertices
+TimeReport   0.000000     0.000000  hltSiStripExcludedFEDListProducer
+TimeReport   0.000000     0.000000  hltSiStripRawToClustersFacility
+TimeReport   0.000000     0.000000  hltSiStripClusters
+TimeReport   0.001929     0.002607  hltIter0PFLowPixelSeedsFromPixelTracks
+TimeReport   0.033664     0.045492  hltIter0PFlowCkfTrackCandidates
+TimeReport   0.013573     0.018342  hltIter0PFlowCtfWithMaterialTracks
+TimeReport   0.000093     0.000125  hltIter0PFlowTrackCutClassifier
+TimeReport   0.000224     0.000303  hltIter0PFlowTrackSelectionHighPurity
+TimeReport   0.000082     0.000111  hltTrackIter0RefsForJets4Iter1
+TimeReport   0.000115     0.000156  hltAK4Iter0TrackJets4Iter1
+TimeReport   0.000196     0.000265  hltIter0TrackAndTauJets4Iter1
+TimeReport   0.000056     0.000076  hltIter1ClustersRefRemoval
+TimeReport   0.000069     0.000093  hltIter1MaskedMeasurementTrackerEvent
+TimeReport   0.000399     0.000540  hltIter1PixelLayerQuadruplets
+TimeReport   0.000052     0.000071  hltIter1PFlowPixelTrackingRegions
+TimeReport   0.000006     0.000009  hltIter1PFlowPixelClusterCheck
+TimeReport   0.056806     0.076764  hltIter1PFlowPixelHitDoublets
+TimeReport   0.007410     0.010014  hltIter1PFlowPixelHitQuadruplets
+TimeReport   0.010625     0.014359  hltIter1PFlowPixelSeeds
+TimeReport   0.121393     0.164044  hltIter1PFlowCkfTrackCandidates
+TimeReport   0.018530     0.025040  hltIter1PFlowCtfWithMaterialTracks
+TimeReport   0.000117     0.000158  hltIter1PFlowTrackCutClassifierPrompt
+TimeReport   0.000100     0.000135  hltIter1PFlowTrackCutClassifierDetached
+TimeReport   0.000011     0.000015  hltIter1PFlowTrackCutClassifierMerged
+TimeReport   0.000308     0.000416  hltIter1PFlowTrackSelectionHighPurity
+TimeReport   0.001655     0.002237  hltIter1Merged
+TimeReport   0.000147     0.000199  hltIter1TrackRefsForJets4Iter2
+TimeReport   0.000194     0.000262  hltAK4Iter1TrackJets4Iter2
+TimeReport   0.000241     0.000326  hltIter1TrackAndTauJets4Iter2
+TimeReport   0.000116     0.000157  hltIter2ClustersRefRemoval
+TimeReport   0.000104     0.000141  hltIter2MaskedMeasurementTrackerEvent
+TimeReport   0.000414     0.000559  hltIter2PixelLayerTriplets
+TimeReport   0.000045     0.000060  hltIter2PFlowPixelTrackingRegions
+TimeReport   0.000006     0.000008  hltIter2PFlowPixelClusterCheck
+TimeReport   0.008498     0.011484  hltIter2PFlowPixelHitDoublets
+TimeReport   0.000834     0.001127  hltIter2PFlowPixelHitTriplets
+TimeReport   0.000283     0.000383  hltIter2PFlowPixelSeeds
+TimeReport   0.003254     0.004397  hltIter2PFlowCkfTrackCandidates
+TimeReport   0.000960     0.001297  hltIter2PFlowCtfWithMaterialTracks
+TimeReport   0.000020     0.000028  hltIter2PFlowTrackCutClassifier
+TimeReport   0.000037     0.000050  hltIter2PFlowTrackSelectionHighPurity
+TimeReport   0.000805     0.001088  hltIter2Merged
+TimeReport   0.000658     0.000889  hltPFMuonMerging
+TimeReport   0.000013     0.000018  hltMuonLinks
+TimeReport   0.004663     0.006302  hltMuons
+TimeReport   0.000766     0.001036  hltEcalPreshowerDigis
+TimeReport   0.002899     0.003918  hltEcalPreshowerRecHit
+TimeReport   0.001354     0.001830  hltParticleFlowRecHitECALUnseeded
+TimeReport   0.003325     0.004493  hltParticleFlowRecHitHBHE
+TimeReport   0.005337     0.007212  hltParticleFlowRecHitHCAL
+TimeReport   0.003689     0.004985  hltParticleFlowRecHitHF
+TimeReport   0.008910     0.012040  hltParticleFlowRecHitPSUnseeded
+TimeReport   0.002925     0.003952  hltParticleFlowClusterECALUncorrectedUnseeded
+TimeReport   0.021590     0.029175  hltParticleFlowClusterPSUnseeded
+TimeReport   0.025244     0.034113  hltParticleFlowClusterECALUnseeded
+TimeReport   0.006310     0.008527  hltParticleFlowClusterHBHE
+TimeReport   0.001511     0.002043  hltParticleFlowClusterHCAL
+TimeReport   0.055243     0.074653  hltParticleFlowClusterHF
+TimeReport   0.000848     0.001145  hltLightPFTracks
+TimeReport   0.092582     0.125110  hltParticleFlowBlock
+TimeReport   0.005923     0.008004  hltParticleFlow
+TimeReport   0.004308     0.005821  hltAK4PFJets
+TimeReport   0.000106     0.000143  hltAK4PFJetsLooseID
+TimeReport   0.000084     0.000114  hltAK4PFJetsTightID
+TimeReport   0.000328     0.000444  hltFixedGridRhoFastjetAll
+TimeReport   0.000016     0.000022  hltAK4PFFastJetCorrector
+TimeReport   0.000007     0.000010  hltAK4PFRelativeCorrector
+TimeReport   0.000005     0.000007  hltAK4PFAbsoluteCorrector
+TimeReport   0.000005     0.000006  hltAK4PFResidualCorrector
+TimeReport   0.000006     0.000009  hltAK4PFCorrector
+TimeReport   0.000816     0.001103  hltAK4PFJetsCorrected
+TimeReport   0.000772     0.001043  hltAK4PFJetsLooseIDCorrected
+TimeReport   0.000762     0.001030  hltAK4PFJetsTightIDCorrected
+TimeReport   0.026915     0.036372  hltVerticesPF
+TimeReport   0.000024     0.000033  hltVerticesPFSelector
+TimeReport   0.000025     0.000034  hltVerticesPFFilter
+TimeReport   0.000018     0.000026  hltPFJetForBtagSelector
+TimeReport   0.000014     0.000020  hltPFJetForBtag
+TimeReport   0.000064     0.000090  hltBLifetimeAssociatorPF
+TimeReport   0.000839     0.001181  hltBLifetimeTagInfosPF
+TimeReport   0.010071     0.014185  hltInclusiveVertexFinderPF
+TimeReport   0.000250     0.000352  hltInclusiveSecondaryVerticesPF
+TimeReport   0.003102     0.004370  hltTrackVertexArbitratorPF
+TimeReport   0.000022     0.000031  hltInclusiveMergedVerticesPF
+TimeReport   0.000280     0.000394  hltSecondaryVertexTagInfosPF
+TimeReport   0.000142     0.000200  hltCombinedSecondaryVertexBJetTagsPF
+TimeReport   0.000041     0.000057  hltPFMHTTightID
+TimeReport   0.000260     0.000366  hltPFMETProducer
+TimeReport   0.000001     0.000001  hltBoolEnd
+
+TimeReport ---------- Modules in Path: HLTriggerFinalPath ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.004478     0.004478  unpackEcal
+TimeReport   0.011105     0.011105  unpackCSC
+TimeReport   0.000119     0.000119  unpackDT
+TimeReport   0.000108     0.000108  unpackRPC
+TimeReport   0.000041     0.000041  unpackEmtf
+TimeReport   0.000017     0.000017  unpackCsctf
+TimeReport   0.000018     0.000018  unpackBmtf
+TimeReport   0.005497     0.005497  simHcalTriggerPrimitiveDigis
+TimeReport   0.002351     0.002351  simCaloStage2Layer1Digis
+TimeReport   0.003386     0.003386  simCaloStage2Digis
+TimeReport   0.002866     0.002866  simDtTriggerPrimitiveDigis
+TimeReport   0.010968     0.010968  simCscTriggerPrimitiveDigis
+TimeReport   0.000167     0.000167  simTwinMuxDigis
+TimeReport   0.013340     0.013340  simBmtfDigis
+TimeReport   0.038872     0.038872  simEmtfDigis
+TimeReport   0.003674     0.003674  simOmtfDigis
+TimeReport   0.001947     0.001947  simGmtCaloSumDigis
+TimeReport   0.000137     0.000137  simGmtStage2Digis
+TimeReport   0.000026     0.000026  simGtExtFakeStage2Digis
+TimeReport   0.001826     0.001826  simGtStage2Digis
+TimeReport   0.000124     0.000124  packCaloStage2
+TimeReport   0.000087     0.000087  packGmtStage2
+TimeReport   0.000145     0.000145  packGtStage2
+TimeReport   0.001577     0.001577  rawDataCollector
+TimeReport   0.000111     0.000111  hltGtStage2Digis
+TimeReport   0.000029     0.000029  hltScalersRawToDigi
+TimeReport   0.000135     0.000135  hltFEDSelector
+TimeReport   0.000149     0.000149  hltTriggerSummaryAOD
+TimeReport   0.000046     0.000046  hltTriggerSummaryRAW
+TimeReport   0.000000     0.000000  hltBoolFalse
+TimeReport  per event    per visit  Name
+
+TimeReport ------ Modules in End-Path: FULLOutput ---[Real sec]----
+TimeReport  per event    per visit  Name
+TimeReport   0.046728     0.046728  hltOutputFULL
+TimeReport  per event    per visit  Name
+
+TimeReport ---------- Module Summary ---[Real sec]----
+TimeReport  per event     per exec    per visit  Name
+TimeReport   0.000015     0.000015     0.000015  TriggerResults
+TimeReport   0.000006     0.000006     0.000006  hltAK4CaloAbsoluteCorrector
+TimeReport   0.000009     0.000009     0.000009  hltAK4CaloCorrector
+TimeReport   0.000028     0.000028     0.000028  hltAK4CaloFastJetCorrector
+TimeReport   0.006608     0.006608     0.006608  hltAK4CaloJets
+TimeReport   0.001012     0.001012     0.001012  hltAK4CaloJetsCorrected
+TimeReport   0.000892     0.000892     0.000892  hltAK4CaloJetsCorrectedIDPassed
+TimeReport   0.001473     0.001473     0.001473  hltAK4CaloJetsIDPassed
+TimeReport   0.003672     0.004963     0.004963  hltAK4CaloJetsPF
+TimeReport   0.000086     0.000116     0.000116  hltAK4CaloJetsPFEt5
+TimeReport   0.000009     0.000009     0.000009  hltAK4CaloRelativeCorrector
+TimeReport   0.000006     0.000006     0.000006  hltAK4CaloResidualCorrector
+TimeReport   0.000115     0.000156     0.000156  hltAK4Iter0TrackJets4Iter1
+TimeReport   0.000194     0.000262     0.000262  hltAK4Iter1TrackJets4Iter2
+TimeReport   0.000005     0.000007     0.000007  hltAK4PFAbsoluteCorrector
+TimeReport   0.000006     0.000009     0.000009  hltAK4PFCorrector
+TimeReport   0.000016     0.000022     0.000022  hltAK4PFFastJetCorrector
+TimeReport   0.004308     0.005821     0.005821  hltAK4PFJets
+TimeReport   0.000816     0.001103     0.001103  hltAK4PFJetsCorrected
+TimeReport   0.000106     0.000143     0.000143  hltAK4PFJetsLooseID
+TimeReport   0.000772     0.001043     0.001043  hltAK4PFJetsLooseIDCorrected
+TimeReport   0.000084     0.000114     0.000114  hltAK4PFJetsTightID
+TimeReport   0.000762     0.001030     0.001030  hltAK4PFJetsTightIDCorrected
+TimeReport   0.000007     0.000010     0.000010  hltAK4PFRelativeCorrector
+TimeReport   0.000005     0.000006     0.000006  hltAK4PFResidualCorrector
+TimeReport   0.000064     0.000090     0.000090  hltBLifetimeAssociatorPF
+TimeReport   0.000839     0.001181     0.001181  hltBLifetimeTagInfosPF
+TimeReport   0.000051     0.000051     0.000051  hltBTagCaloCSVp067Single
+TimeReport   0.000001     0.000001     0.000001  hltBoolEnd
+TimeReport   0.000001     0.000001     0.000001  hltBoolFalse
+TimeReport   0.000132     0.000132     0.000132  hltCaloJetFromPV
+TimeReport   0.000188     0.000188     0.000188  hltCombinedSecondaryVertexBJetTagsCalo
+TimeReport   0.000142     0.000200     0.000200  hltCombinedSecondaryVertexBJetTagsPF
+TimeReport   0.002202     0.002976     0.002976  hltCsc2DRecHits
+TimeReport   0.000695     0.000939     0.000939  hltCscSegments
+TimeReport   0.000102     0.000137     0.000137  hltDt1DRecHits
+TimeReport   0.000310     0.000419     0.000419  hltDt4DSegments
+TimeReport   0.000162     0.000162     0.000059  hltEcalDetIdToBeRecovered
+TimeReport   0.004426     0.004426     0.001615  hltEcalDigis
+TimeReport   0.000766     0.001036     0.001036  hltEcalPreshowerDigis
+TimeReport   0.002899     0.003918     0.003918  hltEcalPreshowerRecHit
+TimeReport   0.002002     0.002002     0.000731  hltEcalRecHit
+TimeReport   0.033228     0.033228     0.012127  hltEcalUncalibRecHit
+TimeReport   0.000135     0.000135     0.000135  hltFEDSelector
+TimeReport   0.000043     0.000043     0.000021  hltFastPVJetTracksAssociator
+TimeReport   0.000020     0.000020     0.000010  hltFastPVJetVertexChecker
+TimeReport   0.000169     0.000169     0.000084  hltFastPVPixelTracks
+TimeReport   0.000009     0.000009     0.000004  hltFastPVPixelTracksFilter
+TimeReport   0.000011     0.000011     0.000005  hltFastPVPixelTracksFitter
+TimeReport   0.004282     0.004282     0.002141  hltFastPVPixelTracksHitDoublets
+TimeReport   0.000774     0.000774     0.000387  hltFastPVPixelTracksHitDoubletsRecover
+TimeReport   0.000754     0.000754     0.000377  hltFastPVPixelTracksHitQuadruplets
+TimeReport   0.000537     0.000537     0.000269  hltFastPVPixelTracksHitQuadrupletsRecover
+TimeReport   0.000068     0.000068     0.000034  hltFastPVPixelTracksMerger
+TimeReport   0.000066     0.000066     0.000033  hltFastPVPixelTracksRecover
+TimeReport   0.000006     0.000006     0.000003  hltFastPVPixelTracksRecoverFilter
+TimeReport   0.000007     0.000007     0.000004  hltFastPVPixelTracksRecoverFitter
+TimeReport   0.000026     0.000026     0.000013  hltFastPVPixelTracksTrackingRegions
+TimeReport   0.000013     0.000013     0.000006  hltFastPVPixelTracksTrackingRegionsRecover
+TimeReport   0.000024     0.000024     0.000012  hltFastPVPixelVertexFilter
+TimeReport   0.000090     0.000090     0.000045  hltFastPVPixelVertices
+TimeReport   0.000018     0.000018     0.000009  hltFastPVPixelVerticesFilter
+TimeReport   0.000048     0.000048     0.000048  hltFastPixelBLifetimeL3Associator
+TimeReport   0.002824     0.002824     0.001412  hltFastPrimaryVertex
+TimeReport   0.000328     0.000444     0.000444  hltFixedGridRhoFastjetAll
+TimeReport   0.000543     0.000543     0.000543  hltFixedGridRhoFastjetAllCalo
+TimeReport   0.000167     0.000167     0.000167  hltGetConditions
+TimeReport   0.000003     0.000003     0.000003  hltGetRaw
+TimeReport   0.000209     0.000209     0.000104  hltGtStage2Digis
+TimeReport   0.002249     0.002249     0.002249  hltGtStage2ObjectMap
+TimeReport   0.042667     0.042667     0.015572  hltHbhePhase1Reco
+TimeReport   0.001851     0.001851     0.000675  hltHbhereco
+TimeReport   0.005998     0.005998     0.002189  hltHcalDigis
+TimeReport   0.014202     0.014202     0.014202  hltHcalNoiseInfoProducer
+TimeReport   0.001438     0.001438     0.001438  hltHcalTowerNoiseCleanerWithrechit
+TimeReport   0.002928     0.002928     0.001068  hltHfprereco
+TimeReport   0.001092     0.001092     0.000399  hltHfreco
+TimeReport   0.000917     0.000917     0.000335  hltHoreco
+TimeReport   0.000041     0.000041     0.000041  hltHtMht
+TimeReport   0.001142     0.001142     0.001142  hltImpactParameterTagInfos
+TimeReport   0.000021     0.000021     0.000021  hltInclusiveMergedVertices
+TimeReport   0.000022     0.000031     0.000031  hltInclusiveMergedVerticesPF
+TimeReport   0.000230     0.000230     0.000230  hltInclusiveSecondaryVertexFinderTagInfos
+TimeReport   0.000214     0.000214     0.000214  hltInclusiveSecondaryVertices
+TimeReport   0.000250     0.000352     0.000352  hltInclusiveSecondaryVerticesPF
+TimeReport   0.007228     0.007228     0.007228  hltInclusiveVertexFinder
+TimeReport   0.010071     0.014185     0.014185  hltInclusiveVertexFinderPF
+TimeReport   0.001929     0.002607     0.002607  hltIter0PFLowPixelSeedsFromPixelTracks
+TimeReport   0.000599     0.000599     0.000599  hltIter0PFLowPixelSeedsFromPixelTracksForBTag
+TimeReport   0.033664     0.045492     0.045492  hltIter0PFlowCkfTrackCandidates
+TimeReport   0.010627     0.010627     0.010627  hltIter0PFlowCkfTrackCandidatesForBTag
+TimeReport   0.013573     0.018342     0.018342  hltIter0PFlowCtfWithMaterialTracks
+TimeReport   0.004202     0.004202     0.004202  hltIter0PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000093     0.000125     0.000125  hltIter0PFlowTrackCutClassifier
+TimeReport   0.000048     0.000048     0.000048  hltIter0PFlowTrackCutClassifierForBTag
+TimeReport   0.000224     0.000303     0.000303  hltIter0PFlowTrackSelectionHighPurity
+TimeReport   0.000109     0.000109     0.000109  hltIter0PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000196     0.000265     0.000265  hltIter0TrackAndTauJets4Iter1
+TimeReport   0.000056     0.000076     0.000076  hltIter1ClustersRefRemoval
+TimeReport   0.000036     0.000036     0.000036  hltIter1ClustersRefRemovalForBTag
+TimeReport   0.000069     0.000093     0.000093  hltIter1MaskedMeasurementTrackerEvent
+TimeReport   0.000037     0.000037     0.000037  hltIter1MaskedMeasurementTrackerEventForBTag
+TimeReport   0.001655     0.002237     0.002237  hltIter1Merged
+TimeReport   0.000284     0.000284     0.000284  hltIter1MergedForBTag
+TimeReport   0.121393     0.164044     0.164044  hltIter1PFlowCkfTrackCandidates
+TimeReport   0.038876     0.038876     0.038876  hltIter1PFlowCkfTrackCandidatesForBTag
+TimeReport   0.018530     0.025040     0.025040  hltIter1PFlowCtfWithMaterialTracks
+TimeReport   0.006891     0.006891     0.006891  hltIter1PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000006     0.000009     0.000009  hltIter1PFlowPixelClusterCheck
+TimeReport   0.000009     0.000009     0.000009  hltIter1PFlowPixelClusterCheckForBTag
+TimeReport   0.056806     0.076764     0.076764  hltIter1PFlowPixelHitDoublets
+TimeReport   0.009637     0.009637     0.009637  hltIter1PFlowPixelHitDoubletsForBTag
+TimeReport   0.007410     0.010014     0.010014  hltIter1PFlowPixelHitQuadruplets
+TimeReport   0.001428     0.001428     0.001428  hltIter1PFlowPixelHitQuadrupletsForBTag
+TimeReport   0.010625     0.014359     0.014359  hltIter1PFlowPixelSeeds
+TimeReport   0.001998     0.001998     0.001998  hltIter1PFlowPixelSeedsForBTag
+TimeReport   0.000052     0.000071     0.000071  hltIter1PFlowPixelTrackingRegions
+TimeReport   0.000057     0.000057     0.000057  hltIter1PFlowPixelTrackingRegionsForBTag
+TimeReport   0.000100     0.000135     0.000135  hltIter1PFlowTrackCutClassifierDetached
+TimeReport   0.000046     0.000046     0.000046  hltIter1PFlowTrackCutClassifierDetachedForBTag
+TimeReport   0.000011     0.000015     0.000015  hltIter1PFlowTrackCutClassifierMerged
+TimeReport   0.000014     0.000014     0.000014  hltIter1PFlowTrackCutClassifierMergedForBTag
+TimeReport   0.000117     0.000158     0.000158  hltIter1PFlowTrackCutClassifierPrompt
+TimeReport   0.000055     0.000055     0.000055  hltIter1PFlowTrackCutClassifierPromptForBTag
+TimeReport   0.000308     0.000416     0.000416  hltIter1PFlowTrackSelectionHighPurity
+TimeReport   0.000142     0.000142     0.000142  hltIter1PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000399     0.000540     0.000540  hltIter1PixelLayerQuadruplets
+TimeReport   0.000296     0.000296     0.000296  hltIter1PixelLayerQuadrupletsForBTag
+TimeReport   0.000241     0.000326     0.000326  hltIter1TrackAndTauJets4Iter2
+TimeReport   0.000147     0.000199     0.000199  hltIter1TrackRefsForJets4Iter2
+TimeReport   0.000116     0.000157     0.000157  hltIter2ClustersRefRemoval
+TimeReport   0.000059     0.000059     0.000059  hltIter2ClustersRefRemovalForBTag
+TimeReport   0.000104     0.000141     0.000141  hltIter2MaskedMeasurementTrackerEvent
+TimeReport   0.000048     0.000048     0.000048  hltIter2MaskedMeasurementTrackerEventForBTag
+TimeReport   0.000805     0.001088     0.001088  hltIter2Merged
+TimeReport   0.000266     0.000266     0.000266  hltIter2MergedForBTag
+TimeReport   0.003254     0.004397     0.004397  hltIter2PFlowCkfTrackCandidates
+TimeReport   0.003942     0.003942     0.003942  hltIter2PFlowCkfTrackCandidatesForBTag
+TimeReport   0.000960     0.001297     0.001297  hltIter2PFlowCtfWithMaterialTracks
+TimeReport   0.001118     0.001118     0.001118  hltIter2PFlowCtfWithMaterialTracksForBTag
+TimeReport   0.000006     0.000008     0.000008  hltIter2PFlowPixelClusterCheck
+TimeReport   0.000008     0.000008     0.000008  hltIter2PFlowPixelClusterCheckForBTag
+TimeReport   0.008498     0.011484     0.011484  hltIter2PFlowPixelHitDoublets
+TimeReport   0.007153     0.007153     0.007153  hltIter2PFlowPixelHitDoubletsForBTag
+TimeReport   0.000834     0.001127     0.001127  hltIter2PFlowPixelHitTriplets
+TimeReport   0.000579     0.000579     0.000579  hltIter2PFlowPixelHitTripletsForBTag
+TimeReport   0.000283     0.000383     0.000383  hltIter2PFlowPixelSeeds
+TimeReport   0.000323     0.000323     0.000323  hltIter2PFlowPixelSeedsForBTag
+TimeReport   0.000045     0.000060     0.000060  hltIter2PFlowPixelTrackingRegions
+TimeReport   0.000051     0.000051     0.000051  hltIter2PFlowPixelTrackingRegionsForBTag
+TimeReport   0.000020     0.000028     0.000028  hltIter2PFlowTrackCutClassifier
+TimeReport   0.000023     0.000023     0.000023  hltIter2PFlowTrackCutClassifierForBTag
+TimeReport   0.000037     0.000050     0.000050  hltIter2PFlowTrackSelectionHighPurity
+TimeReport   0.000045     0.000045     0.000045  hltIter2PFlowTrackSelectionHighPurityForBTag
+TimeReport   0.000414     0.000559     0.000559  hltIter2PixelLayerTriplets
+TimeReport   0.000287     0.000287     0.000287  hltIter2PixelLayerTripletsForBTag
+TimeReport   0.000011     0.000015     0.000015  hltL2MuonCandidates
+TimeReport   0.000065     0.000088     0.000088  hltL2MuonSeeds
+TimeReport   0.000431     0.000583     0.000583  hltL2Muons
+TimeReport   0.000381     0.000515     0.000515  hltL2OfflineMuonSeeds
+TimeReport   0.000009     0.000012     0.000012  hltL3MuonCandidates
+TimeReport   0.000005     0.000007     0.000007  hltL3Muons
+TimeReport   0.000041     0.000056     0.000056  hltL3MuonsIOHit
+TimeReport   0.000008     0.000010     0.000010  hltL3MuonsLinksCombination
+TimeReport   0.000055     0.000074     0.000074  hltL3MuonsOIHit
+TimeReport   0.000177     0.000239     0.000239  hltL3MuonsOIState
+TimeReport   0.000007     0.000010     0.000010  hltL3TkFromL2OICombination
+TimeReport   0.000021     0.000028     0.000028  hltL3TkTracksFromL2
+TimeReport   0.000028     0.000038     0.000038  hltL3TkTracksFromL2IOHit
+TimeReport   0.000030     0.000041     0.000041  hltL3TkTracksFromL2OIHit
+TimeReport   0.000054     0.000073     0.000073  hltL3TkTracksFromL2OIState
+TimeReport   0.000030     0.000041     0.000041  hltL3TkTracksMergeStep1
+TimeReport   0.000007     0.000010     0.000010  hltL3TrackCandidateFromL2
+TimeReport   0.000076     0.000103     0.000103  hltL3TrackCandidateFromL2IOHit
+TimeReport   0.000051     0.000069     0.000069  hltL3TrackCandidateFromL2OIHit
+TimeReport   0.000231     0.000313     0.000313  hltL3TrackCandidateFromL2OIState
+TimeReport   0.000078     0.000106     0.000106  hltL3TrajSeedIOHit
+TimeReport   0.000034     0.000046     0.000046  hltL3TrajSeedOIHit
+TimeReport   0.000104     0.000140     0.000140  hltL3TrajSeedOIState
+TimeReport   0.000009     0.000012     0.000012  hltL3TrajectorySeed
+TimeReport   0.000848     0.001145     0.001145  hltLightPFTracks
+TimeReport   0.000022     0.000022     0.000022  hltMHTNoPU
+TimeReport   0.001236     0.001236     0.000618  hltMet
+TimeReport   0.001248     0.001248     0.001248  hltMetClean
+TimeReport   0.000056     0.000056     0.000056  hltMht
+TimeReport   0.000113     0.000153     0.000153  hltMixedLayerPairs
+TimeReport   0.006872     0.009286     0.009286  hltMuonCSCDigis
+TimeReport   0.000075     0.000101     0.000101  hltMuonDTDigis
+TimeReport   0.000013     0.000018     0.000018  hltMuonLinks
+TimeReport   0.000080     0.000108     0.000108  hltMuonRPCDigis
+TimeReport   0.004663     0.006302     0.006302  hltMuons
+TimeReport   0.000025     0.000025     0.000025  hltOnlineBeamSpot
+TimeReport   0.046728     0.046728     0.046728  hltOutputFULL
+TimeReport   0.000014     0.000020     0.000020  hltPFJetForBtag
+TimeReport   0.000018     0.000026     0.000026  hltPFJetForBtagSelector
+TimeReport   0.000260     0.000366     0.000366  hltPFMETProducer
+TimeReport   0.000041     0.000057     0.000057  hltPFMHTTightID
+TimeReport   0.000658     0.000889     0.000889  hltPFMuonMerging
+TimeReport   0.005923     0.008004     0.008004  hltParticleFlow
+TimeReport   0.092582     0.125110     0.125110  hltParticleFlowBlock
+TimeReport   0.002925     0.003952     0.003952  hltParticleFlowClusterECALUncorrectedUnseeded
+TimeReport   0.025244     0.034113     0.034113  hltParticleFlowClusterECALUnseeded
+TimeReport   0.006310     0.008527     0.008527  hltParticleFlowClusterHBHE
+TimeReport   0.001511     0.002043     0.002043  hltParticleFlowClusterHCAL
+TimeReport   0.055243     0.074653     0.074653  hltParticleFlowClusterHF
+TimeReport   0.021590     0.029175     0.029175  hltParticleFlowClusterPSUnseeded
+TimeReport   0.001354     0.001830     0.001830  hltParticleFlowRecHitECALUnseeded
+TimeReport   0.003325     0.004493     0.004493  hltParticleFlowRecHitHBHE
+TimeReport   0.005337     0.007212     0.007212  hltParticleFlowRecHitHCAL
+TimeReport   0.003689     0.004985     0.004985  hltParticleFlowRecHitHF
+TimeReport   0.008910     0.012040     0.012040  hltParticleFlowRecHitPSUnseeded
+TimeReport   0.000105     0.000142     0.000142  hltPixelLayerPairs
+TimeReport   0.000166     0.000225     0.000225  hltPixelLayerQuadruplets
+TimeReport   0.000134     0.000134     0.000067  hltPixelLayerQuadrupletsRegForBTag
+TimeReport   0.000187     0.000253     0.000253  hltPixelLayerTriplets
+TimeReport   0.005198     0.007025     0.007025  hltPixelTracks
+TimeReport   0.000006     0.000008     0.000008  hltPixelTracksFilter
+TimeReport   0.000007     0.000010     0.000010  hltPixelTracksFitter
+TimeReport   0.000221     0.000221     0.000221  hltPixelTracksForNoPU
+TimeReport   0.000006     0.000006     0.000006  hltPixelTracksForNoPUFilter
+TimeReport   0.000008     0.000008     0.000008  hltPixelTracksForNoPUFitter
+TimeReport   0.008060     0.010892     0.010892  hltPixelTracksHitDoublets
+TimeReport   0.005167     0.005167     0.005167  hltPixelTracksHitDoubletsForNoPU
+TimeReport   0.020401     0.027568     0.027568  hltPixelTracksHitQuadruplets
+TimeReport   0.001123     0.001123     0.001123  hltPixelTracksHitQuadrupletsForNoPU
+TimeReport   0.000009     0.000012     0.000012  hltPixelTracksTrackingRegions
+TimeReport   0.000019     0.000019     0.000019  hltPixelTracksTrackingRegionsForNoPU
+TimeReport   0.000456     0.000617     0.000617  hltPixelVertices
+TimeReport   0.000001     0.000001     0.000001  hltPreHbbOpen
+TimeReport   0.000075     0.000101     0.000101  hltRpcRecHits
+TimeReport   0.000035     0.000035     0.000017  hltScalersRawToDigi
+TimeReport   0.000280     0.000394     0.000394  hltSecondaryVertexTagInfosPF
+TimeReport   0.000024     0.000024     0.000012  hltSelector4CentralJetsL1FastJet
+TimeReport   0.000011     0.000011     0.000011  hltSelector8CentralJetsL1FastJet
+TimeReport   0.000017     0.000017     0.000009  hltSelectorCentralJets20L1FastJeta
+TimeReport   0.000011     0.000011     0.000011  hltSelectorCentralJets30L1FastJeta
+TimeReport   0.000032     0.000032     0.000016  hltSelectorJets20L1FastJet
+TimeReport   0.000027     0.000027     0.000027  hltSelectorJets20L1FastJetForNoPU
+TimeReport   0.000016     0.000016     0.000016  hltSelectorJets30L1FastJet
+TimeReport   0.008785     0.011872     0.005936  hltSiPixelClusters
+TimeReport   0.003325     0.004493     0.002247  hltSiPixelClustersCache
+TimeReport   0.005564     0.005564     0.002782  hltSiPixelClustersRegForBTag
+TimeReport   0.002228     0.002228     0.001114  hltSiPixelClustersRegForBTagCache
+TimeReport   0.005554     0.007506     0.003753  hltSiPixelDigis
+TimeReport   0.013386     0.013386     0.006693  hltSiPixelDigisRegForBTag
+TimeReport   0.005747     0.007766     0.003883  hltSiPixelRecHits
+TimeReport   0.003772     0.003772     0.001886  hltSiPixelRecHitsRegForBTag
+TimeReport   0.000167     0.000225     0.000113  hltSiStripClusters
+TimeReport   0.000229     0.000229     0.000229  hltSiStripClustersRegForBTag
+TimeReport   0.000026     0.000026     0.000010  hltSiStripExcludedFEDListProducer
+TimeReport   0.000232     0.000232     0.000094  hltSiStripRawToClustersFacility
+TimeReport   0.006113     0.006113     0.003057  hltTowerMakerForAll
+TimeReport   0.005400     0.007298     0.007298  hltTowerMakerForPF
+TimeReport   0.000082     0.000111     0.000111  hltTrackIter0RefsForJets4Iter1
+TimeReport   0.001224     0.001224     0.001224  hltTrackVertexArbitrator
+TimeReport   0.003102     0.004370     0.004370  hltTrackVertexArbitratorPF
+TimeReport   0.000149     0.000149     0.000149  hltTriggerSummaryAOD
+TimeReport   0.000046     0.000046     0.000046  hltTriggerSummaryRAW
+TimeReport   0.000001     0.000001     0.000001  hltTriggerType
+TimeReport   0.000014     0.000019     0.000019  hltTrimmedPixelVertices
+TimeReport   0.008762     0.008762     0.008762  hltVerticesL3
+TimeReport   0.026915     0.036372     0.036372  hltVerticesPF
+TimeReport   0.000025     0.000034     0.000034  hltVerticesPFFilter
+TimeReport   0.000024     0.000033     0.000033  hltVerticesPFSelector
+TimeReport   0.000278     0.000278     0.000093  packCaloStage2
+TimeReport   0.000190     0.000190     0.000063  packGmtStage2
+TimeReport   0.000308     0.000308     0.000103  packGtStage2
+TimeReport   0.003325     0.003325     0.001108  rawDataCollector
+TimeReport   0.023763     0.023763     0.007921  simBmtfDigis
+TimeReport   0.008545     0.008545     0.002848  simCaloStage2Digis
+TimeReport   0.003981     0.003981     0.001327  simCaloStage2Layer1Digis
+TimeReport   0.026280     0.026280     0.008760  simCscTriggerPrimitiveDigis
+TimeReport   0.005070     0.005070     0.001690  simDtTriggerPrimitiveDigis
+TimeReport   0.081311     0.081311     0.027104  simEmtfDigis
+TimeReport   0.003960     0.003960     0.001320  simGmtCaloSumDigis
+TimeReport   0.000309     0.000309     0.000103  simGmtStage2Digis
+TimeReport   0.000042     0.000042     0.000014  simGtExtFakeStage2Digis
+TimeReport   0.002621     0.002621     0.000874  simGtStage2Digis
+TimeReport   0.009380     0.009380     0.003127  simHcalTriggerPrimitiveDigis
+TimeReport   0.007943     0.007943     0.002648  simOmtfDigis
+TimeReport   0.000391     0.000391     0.000130  simTwinMuxDigis
+TimeReport   0.000027     0.000027     0.000009  unpackBmtf
+TimeReport   0.011105     0.011105     0.003702  unpackCSC
+TimeReport   0.000026     0.000026     0.000009  unpackCsctf
+TimeReport   0.000121     0.000121     0.000040  unpackDT
+TimeReport   0.004478     0.004478     0.001493  unpackEcal
+TimeReport   0.000050     0.000050     0.000017  unpackEmtf
+TimeReport   0.000131     0.000131     0.000044  unpackRPC
+TimeReport  per event     per exec    per visit  Name
+
+T---Report end!
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 PulseChiSqSNNLS::Min -w EcalUncalibRecHi                       1        1
+    2 XrdAdaptor           -w file_open                              1        1
+    3 TooManyClusters      -e SiPixelClusterPr                       3        3
+    4 fileAction           -s file_close                             1        1
+    5 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 PulseChiSqSNNLS::Minimize 1/36680                           
+    2 XrdAdaptor           pre-events                        
+    3 TooManyClusters      1/36636          1/36651          1/36666
+    4 fileAction           PostEndRun                        
+    5 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 2                   2
+Error                   3                   3
+System                  3                   3
