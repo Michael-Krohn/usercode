@@ -20,7 +20,7 @@ os.system("tar czf python.tar.gz --dereference --directory $CMSSW_BASE python")
 os.system("voms-proxy-info -path | xargs -i  cp {}  .")
 config.JobType.inputFiles = [
                              'fwlite_config.py',
-                             'hltForNtuples3_dump.py',
+                             'hltForNtuples4_dump.py',
                              'script.py',
                              'python.tar.gz',
                              'utils.py',

@@ -10752,7 +10752,7 @@ process.HLTL3muonrecoNocandSequence = cms.Sequence( process.HLTL3muonTkCandidate
 process.HLTL3muonrecoSequence = cms.Sequence( process.HLTL3muonrecoNocandSequence + process.hltL3MuonCandidates )
 process.HLTRecoPixelTracksSequence = cms.Sequence( process.hltPixelTracksFilter + process.hltPixelTracksFitter + process.hltPixelTracksTrackingRegions + process.hltPixelLayerQuadruplets + process.hltPixelTracksHitDoublets + process.hltPixelTracksHitQuadruplets + process.hltPixelTracks )
 process.HLTRecopixelvertexingSequence = cms.Sequence( process.HLTRecoPixelTracksSequence + process.hltPixelVertices + process.hltTrimmedPixelVertices )
-######ADDING THIS####
+######ADDED THIS####
 process.SimL1Emulator = cms.Sequence(process.unpackEcal+process.unpackCSC+process.unpackDT+process.unpackRPC+process.unpackEmtf+process.unpackCsctf+process.unpackBmtf+process.simHcalTriggerPrimitiveDigis+process.simCaloStage2Layer1Digis+process.simCaloStage2Digis+process.simDtTriggerPrimitiveDigis+process.simCscTriggerPrimitiveDigis+process.simTwinMuxDigis+process.simBmtfDigis+process.simEmtfDigis+process.simOmtfDigis+process.simGmtCaloSumDigis+process.simGmtStage2Digis+process.simGtExtFakeStage2Digis+process.simGtStage2Digis+process.packCaloStage2+process.packGmtStage2+process.packGtStage2+process.rawDataCollector)
 
 process.simCaloStage2BitwiseLayer1Digis = simCaloStage2BitwiseLayer1Digis.clone()

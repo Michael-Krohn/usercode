@@ -296,7 +296,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
         event.getByLabel(l1HT_label, l1HT_source)
 	event.getByLabel(AK8Jets_label, AK8Jets_source)
         event.getByLabel(AK8GenJets_label, AK8GenJets_source)
-        event.getByLabel(AK8SoftDrop_label, AK8SoftDrop_source)
+#        event.getByLabel(AK8SoftDrop_label, AK8SoftDrop_source)
 
         ####################################################
 
@@ -462,7 +462,7 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
                 triggerVars[triggerName][0] = 0
 
         njet = 0
-        for jet in range(AK8Jets.num[0]):
+#        for jet in range(AK8Jets.num[0]):
 #	for jet in AK8Jets_source.productWithCheck():
 #	        print "jetHandle"
 #	        print AK8Jets_source->ptrAt(jet)
@@ -470,9 +470,12 @@ def launchNtupleFromHLT(fileOutput,filesInput, secondaryFiles, maxEvents,preProc
 
 #                AK8SoftDrop[njet] = jet.userFloat("ak8PFJetsCHSSoftDropMass")
 #	        AK8SoftDrop[jet] = (AK8SoftDrop_source)[jetptr]
-		print "test AK8SDM"
-                print AK8SoftDrop_source.productWithCheck().get(njet)
-                AK8SoftDrop[jet] = AK8SoftDrop_source.product().get(njet)
+
+#                AK8SoftDrop[njet] = (AK8SoftDrop_source)[jet]
+
+#		print "test AK8SDM"
+#                print AK8SoftDrop_source.productWithCheck().get(njet)
+#                AK8SoftDrop[jet] = AK8SoftDrop_source.product().get(njet)
 
 		njet += 1
 
